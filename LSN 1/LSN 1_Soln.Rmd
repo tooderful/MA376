@@ -2,6 +2,7 @@
 title: "MA376 Lesson 1-Solutions"
 subtitle: "Public sentiment on the use of facial recognition"
 author: "by Anny-Claude Joseph"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
     df_print: paged
