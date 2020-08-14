@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 ### Background 
-In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
+In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly.^[An interesting podcast episode about this topic can be found [here](https://www.nytimes.com/2020/08/03/podcasts/the-daily/algorithmic-justice-racism.html)] Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
 
 <br>
 
