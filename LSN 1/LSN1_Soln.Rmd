@@ -60,7 +60,7 @@ In the past, facial recognition technology (FRT) was viewed as something straigh
 
 <br>
 
-```{r, message=FALSE, echo=FALSE}
+```{r, message=FALSE, echo=TRUE}
 library('tidyverse')
 
 dat <- read_csv('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/Wave49.csv')
