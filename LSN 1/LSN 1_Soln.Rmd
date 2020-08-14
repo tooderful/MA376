@@ -199,7 +199,7 @@ How far would can we generalize our conclusions? Could we draw a cause-effect co
 #### Step 6: Look back and ahead
 What are the limitations to our approach? Propose two ways to address these limitations in a future study.
 
-*For future work we could create statistical models that allow us to 1) evaluate the impact of potential confounders like socioeconomic status and political party affiliation and 2) adjust categorical variables with more than two levels.*
+*For future work we could create statistical models that allow us to 1) evaluate the impact of potential confounders like socioeconomic status and political party affiliation and 2) adjust for categorical variables with more than two levels.*
 
 <br>
 
