@@ -6,7 +6,7 @@
 packages <- c('tidyverse', 'haven','ggmosaic', 'table1')
 lapply(packages, library, character.only = TRUE)
 
-raw.dat = read_sav('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Scrap/American Trends Panel/W49_Jun19/ATP W49.sav')
+raw.dat = read_sav('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/ATP W49.sav')
 # names(raw.dat)
 #-------------------------------------------------------------------------------------------------------------------------------#
 # Prepare data
@@ -42,7 +42,8 @@ dat <- dat %>% filter(F_RACECMB %in% c(1,2))%>%
                              F_RACECMB !=1~ 'Black'))
 # table(dat$F_RACECMB); table(dat$Race)
 
-write.csv(dat[,35:39], 'C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Scrap/Wave49.csv')
+write.csv(dat[,c(35:39)], 'C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/Wave49.csv')
+
 #### End
 #-------------------------------------------------------------------------------------------------------------------------------#
 
