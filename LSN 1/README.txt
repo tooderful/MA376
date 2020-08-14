@@ -1,5 +1,5 @@
 Required:
-Wave49.csv located in Prep folder.
+Wave49.csv located in Prep files.
 
 Description of files:
 LSN1.Rmd   : Fillable markdown file for students
