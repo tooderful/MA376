@@ -42,11 +42,7 @@ dat <- dat %>% filter(F_RACECMB %in% c(1,2))%>%
                              F_RACECMB !=1~ 'Black'))
 # table(dat$F_RACECMB); table(dat$Race)
 
-# Political Party: dat$F_PARTY_FINAL
-dat <- dat %>% filter(F_PARTY_FINAL %in% c(1,2))%>% 
-  mutate(Party = case_when(F_PARTY_FINAL == 1~ 'Republican',
-                          F_PARTY_FINAL !=1~ 'Democrat'))
-write.csv(dat[,35:40], 'C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Scrap/Wave49.csv')
+write.csv(dat[,35:39], 'C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Scrap/Wave49.csv')
 #### End
 #-------------------------------------------------------------------------------------------------------------------------------#
 
