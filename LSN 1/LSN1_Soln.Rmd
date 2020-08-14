@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 <br>
 
-### Background
+### Background 
 In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
 
 <br>
@@ -62,7 +62,6 @@ In the past, facial recognition technology (FRT) was viewed as something straigh
 
 ```{r, message=FALSE, echo=TRUE}
 library('tidyverse')
-
 dat <- read_csv('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/Wave49.csv')
 # head(dat)
 
@@ -78,7 +77,7 @@ Write a research question involving two variables in the dataset.
 #### Step 2:  Design a study and collect data
 Use no more than three sentences to describe the data. Be sure to indicate how many subjects are in the analysis and what values the variables take on. 
 
-*Data were collected on 5,859 adults in the United States from June 3 to June 17, 2019. We used in our analysis n = 3,187 individuals with measurements for the following variables: TrustPolice (Not too much/No vs Yes/Somewhat) and Education (College vs No College).*
+*Data were collected on 5,859 adults in the United States from June 3 to June 17, 2019. In our analysis we used n = 3,187 individuals with measurements for the following variables: TrustPolice (Not too much/No vs Yes/Somewhat) and Education (College vs No College).*
 
 ```{r, warning=FALSE, message=FALSE}
 # install.package(table1)
@@ -123,12 +122,15 @@ dat %>% ggplot()+
 ##### c. Identify a potential confounding variable and explain how it may be confounding in this study. 
 
 *Race is a potential confounder. Sentiments about law enforcement use of FRT and educational attainment may vary by race*.
+```{r}
+table1(~TrustPolice+Education|Race, data =dat)
+```
 
 <br>
 
 ##### d. Create another mosaic plot that includes the third variable. Does the plot suggest that the third variable is confounding? Explain.
 
-*Race impacts the association between educational attainment and belief that law enforcement would use FRT responsibly. A larger proportion of Whites trusted law enforcement regardless of educational attainment. However, for Blacks who were not college educated, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%); whereas for Blacks who were college educated, the percentage of individuals who trusted law enforcement was lower (46.3% vs 53.7%).*
+*Race impacts the association between educational attainment and belief that law enforcement would use FRT responsibly. A larger proportion of Whites trusted law enforcement regardless of educational attainment. However, for non-college educated Blacks, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%); whereas for college educated Blacks, the percentage of individuals who trusted law enforcement was lower (46.3% vs 53.7%).*
 ```{r, warning=FALSE}
 # d. Mosaic plot that includes the third variable
 dat %>% ggplot()+ 
