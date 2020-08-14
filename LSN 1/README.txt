@@ -1,5 +1,5 @@
 Required:
-Wave49.csv located in 'Lesson Ideas\L1 - Facial Recognition\American Trends Panel\W49_Jun19' folder.
+Wave49.csv located in Prep folder.
 
 Description of files:
 LSN1.Rmd   : Fillable markdown file for students
