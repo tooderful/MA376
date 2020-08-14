@@ -42,7 +42,7 @@ Use no more than three sentences to describe the data. Be sure to indicate how m
 \textit{Type your answers here}
 \vspace{.5in}
 
-\item[b.] Create a contingency table and mosaic plot to summarize the response and explanatory variables. Does the plot suggest an association exists? Explain. Clearly indicate the response and explanatory variable in your response.
+\item[b.] Create a contingency table and mosaic plot to summarize the response and explanatory variables. Does the plot suggest an association exists? Explain. 
 
 \textit{Type your answers here}
 \vspace{.5in}

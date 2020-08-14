@@ -103,9 +103,9 @@ dat %>% ggplot(aes(TrustPolice))+ geom_histogram(stat='count')
 
 <br>
 
-##### b. Create a contingency table and mosaic plot to summarize the response and explanatory variables. Does the plot suggest an association exists? Explain. Clearly indicate the response and explanatory variable in your response.
+##### b. Create a contingency table and mosaic plot to summarize the response and explanatory variables. Does the plot suggest an association exists? Explain.
 
-*Response variable- Trust law enforcement to use FRT responsibly. Explanatory variable- College Education. The plot shows that a higher proportion of individuals did not have a college education (59.1%), and higher proportion of individuals trusted law enforcement (68.1%). The percentage of individuals who trusted law enforcement was higher for non-college educated than college educated individuals (70.2% vs 65.2%).*
+*The plot shows that a higher proportion of individuals did not have a college education (59.1%), and higher proportion of individuals trusted law enforcement (68.1%). The percentage of individuals who trusted law enforcement was higher for non-college educated than college educated individuals (70.2% vs 65.2%).*
 
 ```{r, warning=FALSE}
 # b. Contingency table 
@@ -129,7 +129,7 @@ dat %>% ggplot()+
 
 ##### d. Create another mosaic plot that includes the third variable. Does the plot suggest that the third variable is confounding? Explain.
 
-*Race affected the association between educational attainment and belief that law enforcement would use FRT responsibly. For Whites the percentage of individuals who trusted law enforcement was higher than those who were more skeptical, regardless of educational attainment. However, for Blacks who were not college educated, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%), whereas for Blacks who were college educated, the percentage of individuals who trusted law enforcement was lower than for those who were more skeptical (46.3% vs 53.7%).*
+*Race affected the association between educational attainment and belief that law enforcement would use FRT responsibly. A larger proportion of Whites trusted law enforcement regardless of educational attainment. However, for Blacks who were not college educated, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%), whereas for Blacks who were college educated, the percentage of individuals who trusted law enforcement was lower (46.3% vs 53.7%).*
 ```{r, warning=FALSE}
 # d. Mosaic plot that includes the third variable
 dat %>% ggplot()+ 
