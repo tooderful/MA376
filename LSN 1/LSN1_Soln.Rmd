@@ -128,7 +128,7 @@ dat %>% ggplot()+
 
 ##### d. Create another mosaic plot that includes the third variable. Does the plot suggest that the third variable is confounding? Explain.
 
-*Race affected the association between educational attainment and belief that law enforcement would use FRT responsibly. A larger proportion of Whites trusted law enforcement regardless of educational attainment. However, for Blacks who were not college educated, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%); whereas for Blacks who were college educated, the percentage of individuals who trusted law enforcement was lower (46.3% vs 53.7%).*
+*Race impacts the association between educational attainment and belief that law enforcement would use FRT responsibly. A larger proportion of Whites trusted law enforcement regardless of educational attainment. However, for Blacks who were not college educated, the percentage of individuals who trusted law enforcement was higher than those who were more skeptical (55.8% vs 44.2%); whereas for Blacks who were college educated, the percentage of individuals who trusted law enforcement was lower (46.3% vs 53.7%).*
 ```{r, warning=FALSE}
 # d. Mosaic plot that includes the third variable
 dat %>% ggplot()+ 
