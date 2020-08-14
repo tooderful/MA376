@@ -135,7 +135,7 @@ table1(~TrustPolice+Education|Race, data =dat)
 # d. Mosaic plot that includes the third variable
 dat %>% ggplot()+ 
   geom_mosaic(aes(x=product(TrustPolice,Education),fill=Education)) +
-  labs(title='Public sentiment on law enforcement use of facial recognition technology \n for Blacks vs Whites', y='Trust Law Inforcement', x='Education')+
+  labs(title='Public sentiment on law enforcement use of facial recognition technology \n for Blacks vs Whites', y='Trust Law Enforcement', x='Education')+
   facet_grid(Race~.)
 table1(~TrustPolice|Race*Education, data = dat)
 ```
