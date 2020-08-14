@@ -170,18 +170,18 @@ table1(~TrustPolice|Race*Education, data = dat)
   <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Race</td>
-    <td class="tg-0pky">Political affiliation</td>
+    <td class="tg-0pky">Socioeconomic status</td>
   </tr>
   <tr>
     <td class="tg-fymr">Inclusion criteria:</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">Unknown</td>
+    <td class="tg-0pky">Political affiliation</td>
 
   </tr>
   <tr>
     <td class="tg-0pky">U.S. adults </td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Unknown</td>
   </tr>
 </tbody>
 </table>
@@ -208,12 +208,12 @@ How far can we generalize our conclusions? Could we draw a cause-effect conclusi
 #### Step 6: Look back and ahead
 What are two limitations to our approach? Discuss how we could address these limitations in a future study.
 
-*In future work we could create statistical models that allow us to 1) adjust for categorical variables with more than two levels and 2) evaluate the impact of potential confounders like socioeconomic status and political party affiliation .*
+*In future work we could create statistical models that allow us to 1) adjust for categorical variables with more than two levels and 2) evaluate the impact of potential confounders like age, socioeconomic status, and political party affiliation .*
 
 <br>
 
 ### Further Investigation
-Work with a partner to investigate another response variable. Are your overall conclusions consistent with this analysis?
+Work with a partner to investigate another response variable. Overall are the conclusions consistent with this analysis?
 
 <br>
 <br>
