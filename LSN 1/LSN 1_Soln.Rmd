@@ -123,7 +123,7 @@ dat %>% ggplot()+
 
 ##### c. Identify a potential confounding variable and explain how it may be confounding in this study. 
 
-*One potential confounding variable is race. Individuals may have different sentiments about law enforcement use of FRT depending on their race and educational attainment may also vary by race*.
+*One potential confounding variable is race. Sentiments about law enforcement use of FRT and educational attainment may vary by race*.
 
 <br>
 
