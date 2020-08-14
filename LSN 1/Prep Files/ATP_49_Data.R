@@ -1,6 +1,6 @@
 # Data Source: American Trends Panel Wave 49
 # https://www.pewresearch.org/internet/dataset/american-trends-panel-wave-49/
-# Accessed: 8/12/202
+# Accessed: 8/12/2020
 
 # Include packages
 packages <- c('tidyverse', 'haven','ggmosaic', 'table1')
