@@ -8,7 +8,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Background:** In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
+**Background:** In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly.^[An interesting podcast episode about this topic can be found [here](https://www.nytimes.com/2020/08/03/podcasts/the-daily/algorithmic-justice-racism.html)] ^[NYPD FAQ on Facial Recognition Technology can be found [here](https://www1.nyc.gov/site/nypd/about/about-nypd/equipment-tech/facial-recognition.page)]. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
+
 
 
 \begin{table}[h!]
@@ -90,15 +91,4 @@ Work with a partner to investigate another response variable. Are your conclusio
 ### References
 Pew Research Center. American Trends Panel Wave 49. https://www.pewresearch.org/internet/dataset/american-trends-panel-wave-49/ (2019). Accessed: 2020-08-12.
  
-\newpage
-```{r, message=FALSE, warning=FALSE}
-library('tidyverse')
-
-dat <- read_csv('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/Wave49.csv')
-# head(dat)
-
-
-# Insert your code here
-``` 
-
 

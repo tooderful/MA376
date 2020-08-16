@@ -8,7 +8,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Background:** In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
+**Background:** In the past, facial recognition technology (FRT) was viewed as something straight out of science fiction. However, over the past decade, this technology has become viable and increasingly widespread. Recently, several lawmakers have expressed concern that certain groups are not using FRT responsibly.^[An interesting podcast episode about this topic can be found [here](https://www.nytimes.com/2020/08/03/podcasts/the-daily/algorithmic-justice-racism.html)] ^[NYPD FAQ on Facial Recognition Technology can be found [here](https://www1.nyc.gov/site/nypd/about/about-nypd/equipment-tech/facial-recognition.page)]. Let us examine public sentiment on this topic using  a dataset based on a portion of the Pew Research Center's American Trends Panel (Pew Research Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/tree/master/LSN%201/Prep%20Files). Additional information about the Pew study can be found in the ATP W49 methodology pdf.] The variables in the dataset are described in the table.
 
 
 \begin{table}[h!]
@@ -23,18 +23,18 @@ Race & Race \\ \hline
 \end{tabular}
 \end{table}
 
-### Step 1: Ask a research question
+#### Step 1: Ask a research question
 Write a research question involving two variables in the dataset.
 
 *Type your answers here*
 \vspace{.5in}
 
-### Step 2:  Design a study and collect data
+#### Step 2:  Design a study and collect data
 Use no more than three sentences to describe the data. Be sure to indicate how many subjects are in the analysis and what values the variables take on. 
 *Type your answers here*
 \vspace{.5in}
 
-### Step 3: Explore the data
+#### Step 3: Explore the data
 \begin{enumerate}
 \item[a.] Create a bar graph of the response variable. Describe the plot.
 
@@ -64,19 +64,19 @@ Use no more than three sentences to describe the data. Be sure to indicate how m
 
 
 \vspace{.5in}
-### Step 4: Draw inferences beyond the data
+#### Step 4: Draw inferences beyond the data
 Name one theory-based approach we could use to determine if there was a statistically significant difference between the levels of the explanatory variable.
 
 *Type your answers here*
 \vspace{.5in}
 
-### Step 5: Formulate conclusions
+#### Step 5: Formulate conclusions
 How far can we generalize our conclusions? Could we draw a cause-effect conclusion if we observed statistically significant differences in Step 4? Why or why not?
 
 *Type your answers here*
 \vspace{.5in}
 
-### Step 6: Look back and ahead
+#### Step 6: Look back and ahead
 What are two limitations to our approach? Discuss how we could address these limitations in a future study.
 
 *Type your answers here*
@@ -94,7 +94,7 @@ Pew Research Center. American Trends Panel Wave 49. https://www.pewresearch.org/
 ```{r, message=FALSE, warning=FALSE}
 library('tidyverse')
 
-dat <- read_csv('C:/Users/annyclaude.joseph/Documents/Joseph_Teaching/AY21-1/MA376/Lectures/American Trends Panel/W49_Jun19/Wave49.csv')
+dat <- read_csv('/Wave49.csv')
 # head(dat)
 
 
