@@ -17,6 +17,7 @@ dat <- raw.dat %>% select(educ92, occly2d_03, female, incp_wag, age, marstat, em
 
 dat$Income <- dat$incp_wag                            # Rename variable (Income from wage and salary)
 dat$Age <- dat$age
+dat <- dat %>% filter(Age >= 18)                      # Restrict age to 18+
 
 # Sex: dat$female
 dat <- dat %>% filter(female %in% c(0,1)) %>% 
