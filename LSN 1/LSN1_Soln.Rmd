@@ -151,13 +151,17 @@ table1(~TrustPolice|Race*Education, data = dat)
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-3qbk{border-color:inherit;color:#3166ff;text-align:left;vertical-align:top}
+.tg .tg-6tgj{border-color:inherit;color:#f56b00;text-align:left;vertical-align:top}
+.tg .tg-tu1s{border-color:inherit;color:#32cb00;text-align:left;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-fymr">Observed variation in:</th>
-    <th class="tg-fymr">Sources of explained variation: </th>
-    <th class="tg-fymr">Sources of unexplained variation:</th>
+    <th class="tg-6tgj">Observed variation in:</th>
+    <th class="tg-tu1s">Sources of explained variation: </th>
+    <th class="tg-3qbk">Sources of unexplained variation:</th>
   </tr>
 </thead>
 <tbody>
@@ -173,7 +177,7 @@ table1(~TrustPolice|Race*Education, data = dat)
     <td class="tg-0pky">Socioeconomic status</td>
   </tr>
   <tr>
-    <td class="tg-fymr">Inclusion criteria:</td>
+    <td class="tg-f8tv">Inclusion criteria:</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Political affiliation</td>
 
