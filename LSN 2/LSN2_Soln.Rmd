@@ -1,4 +1,3 @@
-
 ---
 title: "Analyzing the Gender Wage Gap"
 author: "by Anny-Claude Joseph"
@@ -163,7 +162,7 @@ table1(~Sex|Education, data = dat2)
 ```
 <br>
 
-*The proportion of males and females were near parity at the highest level of education (PhD/MD/JD). A higher proportion of males tended to have lower education levels, whereas a larger proportion of females tended to have some college/Associates degrees, Bachelor’s degrees, and Masters degrees. *
+*The proportion of males and females were near parity at the highest level of education (PhD/MD/JD). A higher proportion of males tended to have lower education levels, whereas a larger proportion of females tended to have some college/Associates degrees, Bachelor's degrees, and Masters degrees. *
 <br>
 
 ##### g. Create boxplots for income distributions conditional on the level of the third variable  for males and females. Do the plots suggest that the third variable is confounding? Explain.
