@@ -204,7 +204,7 @@ Name one theory-based approach we could use to determine if there was a statisti
 #### Step 5: Formulate conclusions
 How far can we generalize our conclusions? Could we draw a cause-effect conclusion if we observed statistically significant differences in Step 4? Why or why not?
 
-*We should be cautious about generalizing to the entire U.S. adult population. Although a representative sample was surveyed in the original Pew study, this analysis was restricted to two races. Additionally, we would not be able to make a cause-effect conclusion because this is not a randomized experiment.*
+*We should be cautious about generalizing to the entire U.S. adult population. Although a representative sample was surveyed in the original Pew study, this analysis was restricted to two races. Additionally, we would not be able to make a cause-effect conclusion because this was not a randomized experiment.*
 
 <br>
 <br>
