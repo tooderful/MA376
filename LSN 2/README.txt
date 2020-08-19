@@ -1,5 +1,6 @@
 Required:
 CEPR2018.csv located in Prep Files
+births.csv
 
 Description of files:
 LSN2.Rmd   : Fillable markdown file for students
