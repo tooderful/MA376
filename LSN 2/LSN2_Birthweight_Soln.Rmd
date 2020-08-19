@@ -1,0 +1,184 @@
+---
+title: "Adapted from Example P.B: Predicting Birthweights"
+author: "by Tintle et al."
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+### Background 
+This exercise was based on all births for which the author had complete data in the CDC database for January 2016. 
+<br>
+<br>
+
+### Explore the data
+
+```{r, message=FALSE, echo=TRUE}
+library(tidyverse)
+birthwt.dat <-read_csv('C:/Users/annyclaude.joseph/Desktop/MA376/births.csv')
+
+# Plot the data
+birthwt.dat %>% ggplot(aes(x=weight)) + geom_histogram(bins=100) +
+  labs(title='Histogram of all birthweights for babies born in the U.S. in January, 2016')
+
+# Filter out unknowns
+birthwt.clean <- birthwt.dat %>% filter(weight < 9999)
+birthwt.clean %>% ggplot(aes(x=weight),data=) + geom_histogram(bins=100) +
+  labs(title='Distribution of birthweights after removing the non-responses coded as 9999')
+
+# Summary statistics
+library(table1)
+table1(~weight, data = birthwt.clean) 
+# render.continuous=c(.='Mean (SD)', .='[Min, Q1, Median, Q3, Max]')
+```
+<br>
+<br>
+
+### Residuals
+A residual is the value $y_i - \hat{y}_i$ for $i =1,\cdots,n$. It represents what is left over after we have accounted for a model. If we have a good model, we will explain more variation in the response; thus, reducing the size of the residuals. 
+<br>
+<br>
+
+#### Model 1: Using the (overall) mean.
+If we used the mean to predict future newborn weight how well would we do?
+<br>
+
+The statistical model would be: *predicted weight * = 3259.1
+<br>
+
+```{r}
+# Calculate residuals for mean model
+birthwt.resid <- birthwt.clean %>% mutate(resid=weight-mean(weight)) %>% select(resid)
+birthwt.resid %>% ggplot(aes(x=resid)) + geom_histogram(bins=100) + 
+  labs(title='Distribution of residuals, using the mean birthweight to predict each birthweight in the sample')
+
+# Standard deviation of the residuals
+table1(~resid,data = birthwt.resid)
+```
+<br>
+
+Subtracting the mean from each data value just shifts each observation by the same value and does not change the shape or standard deviation of the distribution. If we use the overall mean to predict birthweights, we have not explained much variation in the response variable (Standard Deviation of the Residuals = 592). We can get better predictions by explaining more variation in the response.
+<br>
+<br>
+<br>
+
+#### Model 2: Using multiple means (adding another variable to the model).
+One variable we have access to in this dataset is whether or not the baby was 'full term' (37 weeks or longer). This could potentially explain some of the variation in birthweights.
+<br>
+
+```{r, warning=FALSE, message=FALSE}
+# Plot the data
+birthwt.clean %>% ggplot(aes(x=weight,color=full.term))+geom_histogram(fill="white", alpha=0.5, position="identity") + labs(title='Birthweights for full term pregnancies and premature pregnancies')
+
+table1(~weight|full.term, data =birthwt.clean)
+
+# Multiple Means Model 
+model2 <- lm(weight ~ 0 + full.term, data = birthwt.clean)
+summary(model2)                 # Residual Standard Error
+
+```
+<br>
+ 
+The statistical model would be:   $$ predicted\,\, weight =   \left\{
+\begin{array}{ll}
+      3360.1, & if \,\, full\,\,term \\
+      2493.8, & if\,\,  premature \\
+\end{array} 
+\right.  $$
+
+The standard error of these residuals (522.9) is smaller than the standard deviation of the residuals when we did not take the length of the pregnancy into account (592). With model 2 we can explain some of the variation in birthweights by knowing whether or not it was a full term birth.
+<br>
+<br>
+<br> 
+
+#### Model 3: Using multiple means (adding a third variable to the model).
+Does Mom's BMI impact weight?
+
+```{r}
+# Remove improbable values
+birthwt.bmi <- birthwt.clean %>% filter(mom.BMI < 90)   
+
+# Multiple Means Model
+model.bmi <- lm(weight ~ 0 + full.term*mom.BMI, data = birthwt.bmi)
+summary(model.bmi)         # There's an error in the book
+```
+<br>
+ 
+The statistical model would be:   $$ predicted\,\, weight =   \left\{
+\begin{array}{ll}
+      3130.1 + 5.24\,\, momBMI, & if \,\, full\,\,term \\
+      2409.1 + 3.42\,\, momBMI, & if\,\,  premature \\
+\end{array} 
+\right.  $$
+
+Information about mother BMI improved the model (slightly). We reduced the standard error of the residuals from 522.9 to 518.1.
+
+The Sources of Variation Diagram summarizes the statistical model. ^[A convenient table generator can be found [here](https://www.tablesgenerator.com/latex_tables).]
+<br>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-3qbk{border-color:inherit;color:#3166ff;text-align:left;vertical-align:top}
+.tg .tg-6tgj{border-color:inherit;color:#f56b00;text-align:left;vertical-align:top}
+.tg .tg-tu1s{border-color:inherit;color:#32cb00;text-align:left;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6tgj">Observed variation in:</th>
+    <th class="tg-tu1s">Sources of explained variation: </th>
+    <th class="tg-3qbk">Sources of unexplained variation:</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Birthweights (grams)</td>
+    <td class="tg-0pky">Length of pregnancy </td>
+    <td class="tg-0pky">Baby's sex</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Mother BMI </td>
+    <td class="tg-0pky">Mother’s weight gain
+during pregnancy</td>
+  </tr>
+  <tr>
+    <td class="tg-f8tv">Inclusion criteria:</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Father's BMI</td>
+
+  </tr>
+  <tr>
+    <td class="tg-0pky"> Country (U.S.) </td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Unknown</td>
+  </tr>
+    <tr>
+    <td class="tg-0pky"> Birth month (January) </td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
+<br>
+<br>
+
+### References
+Nathan Tintle et al.(2019). Intermediate Statistical Investigations for U.S. Military Academy at West Point.
+ 
+ 
