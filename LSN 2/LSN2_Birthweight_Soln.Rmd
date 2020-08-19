@@ -46,7 +46,7 @@ A residual is the value $y_i - \hat{y}_i$ for $i =1,\cdots,n$. It represents wha
 <br>
 <br>
 
-#### Model 1: Using the (overall) mean.
+#### Model 1: Using a single mean.
 If we used the mean to predict future newborn weight how well would we do?
 <br>
 
@@ -54,7 +54,7 @@ The statistical model would be: *predicted weight * = 3259.1
 <br>
 
 ```{r}
-# Calculate residuals for mean model
+# Calculate residuals for single mean model
 birthwt.resid <- birthwt.clean %>% mutate(resid=weight-mean(weight)) %>% select(resid)
 birthwt.resid %>% ggplot(aes(x=resid)) + geom_histogram(bins=100) + 
   labs(title='Distribution of residuals, using the mean birthweight to predict each birthweight in the sample')
@@ -69,7 +69,7 @@ Subtracting the mean from each data value just shifts each observation by the sa
 <br>
 <br>
 
-#### Model 2: Using multiple means (adding another variable to the model).
+#### Model 2: Using separate means (adding another variable to the model).
 One variable we have access to in this dataset is whether or not the baby was 'full term' (37 weeks or longer). This could potentially explain some of the variation in birthweights.
 <br>
 
@@ -79,9 +79,12 @@ birthwt.clean %>% ggplot(aes(x=weight,color=full.term))+geom_histogram(fill="whi
 
 table1(~weight|full.term, data =birthwt.clean)
 
-# Multiple Means Model 
+# Separate Means Model 
 model2 <- lm(weight ~ 0 + full.term, data = birthwt.clean)
-summary(model2)                 # Residual Standard Error
+summary(model2)                
+# Residual standard error = square root (sum of residuals^2/ degrees of freedom)
+# Degrees of freedom = the number of data points - the number of parameters estimated in the model 
+# Two parameters -> a mean for full term and a mean for premature
 
 ```
 <br>
@@ -98,14 +101,14 @@ The standard error of these residuals (522.9) is smaller than the standard devia
 <br>
 <br> 
 
-#### Model 3: Using multiple means (adding a third variable to the model).
+#### Model 3: Using separate means (adding a third variable to the model).
 Does Mom's BMI impact weight?
 
 ```{r}
 # Remove improbable values
 birthwt.bmi <- birthwt.clean %>% filter(mom.BMI < 90)   
 
-# Multiple Means Model
+# Separate Means Model
 model.bmi <- lm(weight ~ 0 + full.term*mom.BMI, data = birthwt.bmi)
 summary(model.bmi)         # There's an error in the book
 ```
