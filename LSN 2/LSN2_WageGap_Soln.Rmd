@@ -247,7 +247,7 @@ Summarize the conclusions we could draw from this study. How far can we generali
 #### Step 6: Look back and ahead
 Identify limitations to our approach. What could we do to address them in a future study.
 
-*A major limitation of this study is that it does not allow us to account for several potentially confounding variables like type of job and race. In future work we could create statistical models that allow us to account for these variables.*
+*A major limitation of this study is that it does not allow us to account for other sources of variation like type of job and race. In future work we could create statistical models that allow us to account for these variables.*
 <br>
 <br>
 
