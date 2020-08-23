@@ -1,0 +1,148 @@
+---
+title: "Exploration 1.1: Memorizing Letters"
+author: ""
+output: pdf_document
+---
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+####  Step 1: Ask a research questions
+
+1. What was the research question for conducting this study?
+
+*Your response.*
+\vspace{.5in}
+
+####  Step 2: Design a study and collect data
+
+2. Identify the *response variable*. Is this variable quantitative or categorical? (If categorical, note the number of categories. If quantitative, note the measurement units.)
+
+*Your response.*
+\vspace{.5in}
+
+3. Was this an *observational study* or an *experiment*? How are you deciding?
+
+*Your response.*
+\vspace{.5in}
+
+4. Identify the *experimental units*. How many are there?
+
+*Your response.*
+\vspace{.5in}
+
+5. Identify the *treatment variable* and its *levels*.
+
+*Your response.*
+\vspace{.5in}
+
+6. If planning the study, how would you determine who gets which treatment? What would you try to accomplish?
+
+*Your response.*
+\vspace{.5in}
+
+7. Identify any other precautions taken in this study to try to make sure the two treatment groups were equally balanced, that is, the treatment conditions were the same for both groups.
+
+*Your response.*
+\vspace{.5in}
+
+8. Was this a double blind or single blind study?  Explain. What other, if any, appropriate precautions were taken in carrying out this study?
+
+*Your response.*
+\vspace{.5in}
+
+9. Were you and your classmates randomly selected to participate in this study? Do you think you are reprsentative of a larger population? What would you define that population to be?
+
+*Your response.*
+\vspace{.5in}
+
+10. Are there any individuals that you believe we should exclude from participating in this study? Explain.
+
+*Your response.*
+\vspace{.5in}
+
+####  Step 3: Explore the data
+
+11. Create numerical and graphical summaries of the outcomes of the response variable for your class. Summarize your observations in context.
+
+*Your response.*
+\vspace{.5in}
+
+12. Specify a statistical model for predicting future results using the overall mean score for your sample and specifying the standard error of the residuals.
+
+*Your response.*
+\vspace{.5in}
+
+13. Now create numerical and graphical summaries comparing the results for the two treatment groups.  Based on the group means, did one of the sequence groups tend to score higher than the other? By a lot or just a little?  Which sequence group had more variable results? Any other interesting features of the meaningful sequence scores that makes sense in context?
+
+*Your response.*
+\vspace{.5in} 
+
+14. Write a statistical model for predicting outcomes depending on which treatment condition someone is assigned to, using the treatment-specific mean scores ("letter grouping model").  
+
+*Your response.*
+\vspace{.5in}
+
+15. Is the standard error of the residuals for the letter grouping model much smaller than the standard deviation of the residuals in the single mean model?
+
+*Your response.*
+\vspace{.5in}
+
+16. Does knowing which treatment group each person was assigned to explain all of the variation in responses? How are you deciding?
+
+*Your response.*
+\vspace{.5in}
+
+####  Step 4: Draw inferences beyond the data
+We we will learn this in section 1.3
+
+\vspace{.15in}
+
+####  Step 5: Formulate conclusions
+
+17. Summarize your "letter grouping model" with a Sources of Variation Diagram ^[A convenient table generator can be found [here](https://www.tablesgenerator.com/latex_tables).]
+
+*Your response.*
+\vspace{.5in}
+
+18. Examine the distributions of sleep hours for the two treatment groups.  Does amount of sleep appear to be a confounding variable in this study?  How are you deciding?
+
+*Your response.*
+\vspace{.5in}
+
+19. Is caffeine a confounding variable in this study?  How are you deciding? 
+
+*Your response.*
+\vspace{.5in}
+
+20. Could there be another explanation, apart from the grouping of the letters, that could explain the difference in the group means that we found?  Explain.
+
+*Your response.*
+\vspace{.5in}
+
+21. Is the single mean model or the letter grouping model better for predicting the amount of letters students can memorize?  
+
+*Your response.*
+\vspace{.5in}
+
+####  Step 6: Look back and ahead
+
+22. Suggest at least one way you would improve this study if you were to carry it out yourself.
+
+*Your response.*
+\vspace{1in}
+
+### References
+Nathan Tintle et al.(2019). Intermediate Statistical Investigations for U.S. Military Academy at West Point.
+
+
+```{r, message=FALSE, warning=FALSE}
+library('tidyverse')
+
+memory.dat <- read_csv('/MemoryData.csv')
+ 
+
+
+# Insert your code here
+``` 

@@ -1,0 +1,221 @@
+---
+title: "Exploration 1.1: Memorizing Letters"
+author: "by Tintle et al."
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE, echo=TRUE}
+library(tidyverse)
+memory.dat <- read_csv("C:/Users/annyclaude.joseph/Desktop/MA376/MemoryData.csv",header=T, fill=T)
+```
+
+<br>
+
+####  Step 1: Ask a research questions
+
+1. What was the research question for conducting this study?
+
+*Does the type of sequence (familiar vs. unfamiliar chunks) impact how many letters students can recall in order?*
+
+<br>
+
+####  Step 2: Design a study and collect data
+
+2. Identify the *response variable*. Is this variable quantitative or categorical? (If categorical, note the number of categories. If quantitative, note the measurement units.)
+
+*The response variable is the number of letters recalled before mistake. This is a quantitiave variable with units of 'number of letters'.*
+
+3. Was this an *observational study* or an *experiment*? How are you deciding?
+
+*This is an experiment, each student participant was randomly assigned to one of two sequences.*
+
+4. Identify the *experimental units*. How many are there?
+
+*The experimental units are students; n =17 students.*
+
+5. Identify the *treatment variable* and its *levels*.
+
+*The treatment variable is the sequence. The levels of the variable are familiar vs. unfamiliar letters.*
+
+6. If planning the study, how would you determine who gets which treatment? What would you try to accomplish?
+
+*Randomly assign the pieces of paper to each student. The goal is to create groups that are as similar as possible with regard to other variables, i.e. remove confounding variables which allows us to make a cause-effect conclusion.* 
+
+7. Identify any other precautions taken in this study to try to make sure the two treatment groups were equally balanced, that is, the treatment conditions were the same for both groups.
+
+*We selected students from the same class. The students were unaware that there were different sequences, and every student had the same amount of time to memorize the sequence and write down the letters they memorized.*
+
+8. Was this a double blind or single blind study?  Explain. What other, if any, appropriate precautions were taken in carrying out this study?
+
+*This is a double blind study. students did not know which sequence they were given and they know which sequence other students were given when they analysed the response.*
+
+9. Were you and your classmates randomly selected to participate in this study? Do you think you are reprsentative of a larger population? What would you define that population to be?
+
+*Given that students were not randomly selected to participate in the study, this is a convenience sample. This sample could reasonably represent cows at West Point. (Arguments could be made against.)*
+
+10. Are there any individuals that you believe we should exclude from participating in this study? Explain.
+
+*If we were aware that an individual had a cognitive disorders we should exclude them. We would also want to disregard individuals who did not follow the study protocol.*
+
+<br>
+
+####  Step 3: Explore the data
+
+11. Create numerical and graphical summaries of the outcomes of the response variable for your class. Summarize your observations in context.
+
+```{r, message=FALSE, echo=TRUE}
+memory.dat %>% ggplot(aes(x=Score)) + geom_histogram() + labs(title='Distribution of Score')
+
+library(table1)
+table1(~Score, data = memory.dat)
+```
+
+*(Answers will vary).*  
+
+12. Specify a statistical model for predicting future results using the overall mean score for your sample and specifying the standard error of the residuals.
+
+```{r}
+# Single Mean Model
+single.model = lm(Score~1, data=memory.dat)
+summary(single.model)
+```
+
+*(Answers will vary). Predicted score = letters; SE of residuals = letters.*
+
+13. Now create numerical and graphical summaries comparing the results for the two treatment groups.  Based on the group means, did one of the sequence groups tend to score higher than the other? By a lot or just a little?  Which sequence group had more variable results? Any other interesting features of the meaningful sequence scores that makes sense in context?
+
+```{r, message=FALSE}
+memory.dat %>% ggplot(aes(x=Score, fill = Sequence)) + geom_histogram() +
+  facet_wrap(~ Sequence, ncol =1) + labs(title='Distribution of Score for Each Sequence')
+
+table1(~Score|Sequence, data = memory.dat)
+```
+
+*(Answers will vary).*  
+
+14. Write a statistical model for predicting outcomes depending on which treatment condition someone is assigned to, using the treatment-specific mean scores ("letter grouping model").  
+
+```{r}
+# Multiple Means Model
+multi.model = lm(Score ~ Sequence, data = memory.dat)
+summary(multi.model)
+
+```
+
+*(Answers will vary). Statistical Model: Predicted score = ; SE of residuals = letters.*
+
+15. Is the standard error of the residuals for the letter grouping model much smaller than the standard deviation of the residuals in the single mean model?
+
+*(Answers will vary).*
+
+16. Does knowing which treatment group each person was assigned to explain all of the variation in responses? How are you deciding?
+
+*No, based on the standard error of the residuals and the graphs created, treatment group does not explain all of the variation in scores.*  
+
+<br>
+
+####  Step 4: Draw inferences beyond the data
+We we will learn this in section 1.3
+
+<br>
+
+####  Step 5: Formulate conclusions
+
+17. Summarize your "letter grouping model" with a Sources of Variation Diagram ^[A convenient table generator can be found [here](https://www.tablesgenerator.com/latex_tables).]
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-3qbk{border-color:inherit;color:#3166ff;text-align:left;vertical-align:top}
+.tg .tg-6tgj{border-color:inherit;color:#f56b00;text-align:left;vertical-align:top}
+.tg .tg-tu1s{border-color:inherit;color:#32cb00;text-align:left;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6tgj">Observed variation in:</th>
+    <th class="tg-tu1s">Sources of explained variation: </th>
+    <th class="tg-3qbk">Sources of unexplained variation:</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Score (the number of letters recalled before mistake) </td>
+    <td class="tg-0pky">Letter grouping sequence: meaningful vs. meaningless</td>
+    <td class="tg-0pky">Caffeine consumption</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Sleep the night before</td>
+  </tr>
+  <tr>
+    <td class="tg-f8tv">Inclusion criteria: Students in class</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Memorization ability</td>
+
+  </tr>
+  <tr>
+    <td class="tg-f8tv">Design:Students started and stopped memorizing at the same time </td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Unknown</td>
+</tbody>
+</table>
+<br>
+
+18. Examine the distributions of sleep hours for the two treatment groups.  Does amount of sleep appear to be a confounding variable in this study?  How are you deciding?
+
+```{r, message=FALSE}
+memory.dat %>% ggplot(aes(x=Sleep, fill = Sequence)) + geom_histogram() +
+  facet_wrap(~ Sequence, ncol =1)+ labs(title='Distribution of Sleep for Each Sequence')
+table1(~Sleep|Sequence, data = memory.dat)
+```
+
+*(Answers will vary).*
+
+19. Is caffeine a confounding variable in this study?  How are you deciding? 
+
+```{r}
+memory.dat %>% ggplot(aes(y=Score,x=Caffeine,fill=Sequence))+geom_boxplot()+ labs(title='Score Distributions Conditional on Caffeine \n by Sequence')
+```
+
+*(Answers will vary).*
+
+20. Could there be another explanation, apart from the grouping of the letters, that could explain the difference in the group means that we found?  Explain.
+
+*Yes, see the sources of variation diagram (unexplained sources of variation). Ideally, random assignment eliminates confounding variables; however, because of our small sample size confounders are probably not evenly distributed between the two treatment groups.*
+
+21. Is the single mean model or the letter grouping model better for predicting the amount of letters students can memorize?  
+
+*There is evidence that providing meaningful chunks increased how much people were able to remember about the sequence, on average.*
+
+<br>
+
+####  Step 6: Look back and ahead
+
+22. Suggest at least one way you would improve this study if you were to carry it out yourself.
+
+*We could improve this study by using a larger sample. Also, we could get a wider variety of students (other disciplines).*  
+
+<br>
+<br>
+<br>
+<br>
+
+### References
+Nathan Tintle et al.(2019). Intermediate Statistical Investigations for U.S. Military Academy at West Point.
+
+
