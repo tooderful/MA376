@@ -1,5 +1,5 @@
 Required
-MemoryData.csv - data are collected in class.
+MemoryData.csv - data are collected in class. (Example in MemoryData.txt)
 
 Description of files:
 LSN3_Memorizing_Letters_.Rmd   : Fillable markdown file for students
