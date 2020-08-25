@@ -1,0 +1,18 @@
+Sequence,Score,Caffeine ,Sleep
+Meaningless,9,Yes,3
+ Meaningless,11,Yes,5
+Meaningful,3,No,7
+Meaningless,6,No,5.5
+Meaningful,21,Yes,4
+Meaningful,21,No,4.5
+Meaningful,8,Yes,4.5
+Meaningless,10,Yes,5
+Meaningful,14,No,6
+Meaningless,9,No,2
+Meaningful,21,No,6
+Meaningful,14,Yes,6
+Meaningless,2,Yes,5
+Meaningless,4,No,7
+Meaningless,14,No,6
+Meaningful,21,No,7.9
+Meaningful,21,No,5.9

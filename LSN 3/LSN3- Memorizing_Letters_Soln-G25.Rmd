@@ -1,0 +1,234 @@
+---
+title: "Exploration 1.1: Memorizing Letters"
+author: "by Tintle et al."
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE, echo=TRUE}
+library(tidyverse)
+memory.dat <- read_csv('C:/Users/annyclaude.joseph/Desktop/MA376/MemoryDataG25.csv')
+```
+
+<br>
+
+####  Step 1: Ask a research question
+
+1. What was the research question for conducting this study?
+
+`r colorize("*Does the type of sequence (meaningful vs. meaningless chunks) impact how many letters students can recall in order?*", "blue")`
+
+<br>
+
+####  Step 2: Design a study and collect data
+
+2. Identify the *response variable*. Is this variable quantitative or categorical? (If categorical, note the number of categories. If quantitative, note the measurement units.)
+
+`r colorize("*The response variable is the number of letters recalled before mistake. This is a quantitative variable with units of 'number of letters'.*", "blue")`
+
+3. Was this an *observational study* or an *experiment*? How are you deciding?
+
+`r colorize("*This is an experiment, each student participant was randomly assigned to one of two groups.*", "blue")`
+
+
+4. Identify the *experimental units*. How many are there?
+
+`r colorize("*The experimental units are students; n =17 students.*", "blue")`
+
+5. Identify the *treatment variable* and it's *levels*.
+
+`r colorize("*The treatment variable is the group students were assigned to. The levels of the variable are meaningful vs. meaningless letters.*", "blue")`
+
+6. If planning the study, how would you determine who gets which treatment? What would you try to accomplish?
+
+`r colorize("*Randomly assign the sequences to each student. The goal is to create groups that are as similar as possible with regard to other variables, i.e., we want to remove confounding variables which allows us to make a cause-effect conclusion.* ", "blue")`
+
+7. Identify any other precautions taken in this study to try to make sure the two treatment groups were equally balanced, that is, the treatment conditions were the same for both groups.
+
+`r colorize("*We selected students from the same class. The students were unaware that there were different sequences, and every student had the same amount of time to memorize the sequence and write down the letters they memorized.*", "blue")`
+
+8. Was this a double blind or single blind study?  Explain. What other, if any, appropriate precautions were taken in carrying out this study?
+
+`r colorize("*This is a double blind study. Students did not know which sequence they were given, and they did not know which sequence other students were given when they analyzed the response.*", "blue")`
+
+9. Were you and your classmates randomly selected to participate in this study? Do you think you are representative of a larger population? What would you define that population to be?
+
+`r colorize("*Given that students were not randomly selected to participate in the study, this is a convenience sample. This sample could reasonably represent the Corps of Cadets. (Arguments could be made against.)*", "blue")`
+
+10. Are there any individuals that you believe we should exclude from participating in this study? Explain.
+
+`r colorize("*If we were aware that an individual had a cognitive advantage/disadvantage we should exclude them. We would also want to disregard individuals who did not follow the study protocol.*", "blue")`
+
+<br>
+
+####  Step 3: Explore the data
+
+11. Create numerical and graphical summaries of the outcomes of the response variable for your class. Summarize your observations in context.
+
+```{r, message=FALSE, echo=TRUE}
+memory.dat %>% ggplot(aes(x=Score)) + geom_histogram() + labs(title='Distribution of Score')
+
+library(table1)
+table1(~Score, data = memory.dat)
+```
+
+`r colorize("*The distribution is irregular. The average score was 13.9 letters with a standard deviation of 5.06.*  ", "blue")`
+
+12. Specify a statistical model for predicting future results using the overall mean score for your sample and specifying the standard error of the residuals.
+
+```{r}
+# Single Mean Model
+single.model = lm(Score~1, data=memory.dat)
+summary(single.model)
+```
+
+`r colorize("*Predicted score = 13.9 letters; SE of residuals = 5.06 letters.*", "blue")`
+
+13. Now create numerical and graphical summaries comparing the results for the two treatment groups.  Based on the group means, did one of the sequence groups tend to score higher than the other? By a lot or just a little?  Which sequence group had more variable results? Any other interesting features of the meaningful sequence scores that makes sense in context?
+
+```{r, message=FALSE}
+memory.dat %>% ggplot(aes(x=Score, fill = Sequence)) + geom_histogram() +
+  facet_wrap(~ Sequence, ncol =1) + labs(title='Distribution of Score for Each Sequence')
+
+table1(~Score|Sequence, data = memory.dat)
+```
+
+`r colorize("*The group with the meaningless sequence had a much lower mean than the group with a meaningful sequence (9.9 letters vs 18.5 letters). The standard deviation was also slightly lower for the meaningless sequence (2.32 letters vs 2.73 letters).*", "blue")`
+
+14. Write a statistical model for predicting outcomes depending on which treatment condition someone is assigned to, using the treatment-specific mean scores ("letter grouping model").  
+
+```{r}
+# Multiple Means Model
+multi.model = lm(Score ~ 0 + Sequence, data = memory.dat)
+summary(multi.model)
+
+```
+`r colorize("*Statistical Model:*", "blue")`  $$\small{Predicted} \,\,score =   \left\{
+\begin{array}{ll}
+      18.5 \,\, letters, & if \,\, meaningful \,\, sequence \\
+      9.9 \,\, letters, & if\,\,  meaningless \,\, sequence
+\end{array} 
+\right.  $$
+
+`r colorize("*SE of residuals = 2.52 letters.*", "blue")`
+
+15. Is the standard error of the residuals for the letter grouping model much smaller than the standard deviation of the residuals in the single mean model?
+
+`r colorize("*The SE of the residuals for the letter grouping model (multiple means) is about half the standard deviation of the residuals in the single mean model.*", "blue")`
+
+16. Does knowing which treatment group each person was assigned to explain all the variation in responses? How are you deciding?
+
+`r colorize("*No, there is still variation in the scores within each treatment group.*", "blue")`
+
+<br>
+
+####  Step 4: Draw inferences beyond the data
+`r colorize("We will learn this in section 1.3", "blue")`
+
+<br>
+
+####  Step 5: Formulate conclusions
+
+17. Summarize your "letter grouping model" with a Sources of Variation Diagram ^[A convenient table generator can be found [here](https://www.tablesgenerator.com/latex_tables).]
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-3qbk{border-color:inherit;color:#3166ff;text-align:left;vertical-align:top}
+.tg .tg-6tgj{border-color:inherit;color:#f56b00;text-align:left;vertical-align:top}
+.tg .tg-tu1s{border-color:inherit;color:#32cb00;text-align:left;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6tgj">Observed variation in:</th>
+    <th class="tg-tu1s">Sources of explained variation: </th>
+    <th class="tg-3qbk">Sources of unexplained variation:</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Score (the number of letters recalled before mistake) </td>
+    <td class="tg-0pky">Letter grouping sequence: meaningful vs. meaningless</td>
+    <td class="tg-0pky">Caffeine consumption</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Sleep the night before</td>
+  </tr>
+  <tr>
+    <td class="tg-f8tv">Inclusion criteria: Students in class</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Memorization ability</td>
+
+  </tr>
+  <tr>
+    <td class="tg-f8tv">Design: Students started and stopped memorizing at the same time </td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Unknown</td>
+</tbody>
+</table>
+<br>
+
+18. Examine the distributions of sleep hours for the two treatment groups.  Does amount of sleep appear to be a confounding variable in this study?  How are you deciding?
+
+```{r, message=FALSE}
+memory.dat %>% ggplot(aes(x=Sleep, fill = Sequence)) + geom_histogram() +
+  facet_wrap(~ Sequence, ncol =1)+ labs(title='Distribution of Sleep for Each Sequence')
+table1(~Sleep|Sequence, data = memory.dat)
+```
+
+`r colorize("*Possibly; the difference in sleep means is 0.62 hours or about 37 minutes.*", "blue")`
+
+19. Is caffeine a confounding variable in this study?  How are you deciding? 
+
+```{r}
+memory.dat %>% ggplot(aes(y=Score,x=Caffeine,fill=Sequence))+geom_boxplot()+ labs(title='Score Distributions Conditional on Caffeine \n by Sequence')
+```
+
+`r colorize("*Not likely; the group with the meaningful sequence had higher scores regardless of caffeine intake.*", "blue")`
+
+20. Could there be another explanation, apart from the grouping of the letters, that could explain the difference in the group means that we found?  Explain.
+
+`r colorize("*Yes, see the sources of variation diagram (unexplained sources of variation). Ideally, random assignment eliminates confounding variables; however, because of our small sample size confounders are probably not evenly distributed between the two treatment groups.*", "blue")`
+
+21. Is the single mean model or the letter grouping model better for predicting the amount of letters students can memorize?  
+
+`r colorize("*There is evidence that providing meaningful chunks increased how much people were able to remember about the sequence on average.*", "blue")`
+<br>
+
+####  Step 6: Look back and ahead
+
+22. Suggest at least one way you would improve this study if you were to carry it out yourself.
+
+`r colorize("*We could improve this study by using a larger sample. Also, we could get a wider variety of students (other disciplines).*", "blue")`
+<br>
+<br>
+<br>
+<br>
+
+### References
+Nathan Tintle et al.(2019). Intermediate Statistical Investigations for U.S. Military Academy at West Point.
+
+
