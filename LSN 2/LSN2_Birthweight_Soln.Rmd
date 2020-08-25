@@ -89,7 +89,7 @@ summary(model2)
 ```
 <br>
  
-The statistical model would be:   $$ predicted\,\, weight =   \left\{
+The statistical model would be:   $$ \small{predicted}\,\, weight =   \left\{
 \begin{array}{ll}
       3360.1, & if \,\, full\,\,term \\
       2493.8, & if\,\,  premature \\
@@ -157,7 +157,7 @@ The Sources of Variation Diagram summarizes the statistical model. ^[A convenien
   <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Mother BMI </td>
-    <td class="tg-0pky">Mother’s weight gain
+    <td class="tg-0pky">Mother weight gain
 during pregnancy</td>
   </tr>
   <tr>
