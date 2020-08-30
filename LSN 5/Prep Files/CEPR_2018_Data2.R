@@ -1,4 +1,3 @@
-
 # Requires CEPR_2018_Data.csv
 
 # Include packages
@@ -14,7 +13,13 @@ wage.dat <- dat %>% filter(Income > 0 &
 table1(~Income|Sex, data=wage.dat)  
 
 set.seed(356)
-wage.dat2 <- sample_n(wage.dat, 1500)
+female.dat <- wage.dat %>% filter(Sex == 'F') 
+female.dat <- sample_n(female.dat, 700)
+
+male.dat <- wage.dat %>% filter(Sex == 'M') 
+male.dat <- sample_n(male.dat, 700)
+
+wage.dat2 <- rbind(male.dat, female.dat)
 
 
 table1(~Income|Sex, data=wage.dat2)   # Means are similar
