@@ -1,0 +1,198 @@
+---
+title: "Memorizing Letters (continued)"
+author: "by Anny-Claude Joseph"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE, echo=TRUE}
+library(tidyverse)
+memory.dat <- read_csv('C:/Users/annyclaude.joseph/Desktop/MA376/MemoryDataI26.csv')[-3,]
+# For the purpose of the exercise, we remove 1 student with meaningful sequence to
+# balance treatment group sizes.
+```
+
+<br>
+
+#### Background
+Recall that in Lesson 3 you and your classmates were each asked to study a sequence of letters (meaningful or meaningless) for 20 seconds then to write down as many letters as you could remember in order. Your score was the number of letters that you remembered correctly before your first error of any kind. 
+
+<br>
+
+<style type="text/css">
+.tg  {border:none;border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Notation:</th>
+    <th class="tg-fymr"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">$y_{i}$</td>
+    <td class="tg-0pky"> the $i^{th}$ observation of the response variable </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">$\hat{y}_i$</td>
+    <td class="tg-0pky"> the $i^{th}$ predicted value of the response variable</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">$\mu$</td>
+    <td class="tg-0pky"> the true overall mean of the response variable</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">$\mu_{j}$</td>
+    <td class="tg-0pky"> the true mean of the response variables in the $j^{th}$ treatment group</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">$\epsilon_{i}$</td>
+    <td class="tg-0pky"> the residuals (observed values - predicted values)</td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+
+#### Single Mean Model
+A general single mean statistical model for predicting outcomes is:
+
+ $$\small{y_{i} = \mu + \epsilon_{i} \,\,\,\,\,\text{ where } i =  \text{ experimental unit}}$$ 
+
+For the memorization experiment, the fitted single mean model and the standard error of the residuals (SD of the response) are:
+
+
+$$\small{\text{Predicted score = }\hat{y}_i = 12.9 \text{ letters;  SE of residuals = 6.55 letters.}}$$ 
+
+```{r, message=FALSE, echo=TRUE}
+
+single.model <- lm(Score~1, data=memory.dat)
+summary(single.model)
+```
+<br>
+
+#### Multiple (Separate) Means Model
+A general statistical model for predicting outcomes depending on which treatment group the experimental  unit is assigned to is:
+ 
+$$\small{y_{ij} = \mu_j + \epsilon_{ij} \,\,\,\,\,\text{ where } i =  \text{ experimental unit and } j = \text{treatment group}}$$ 
+ 
+For the memorization experiment, the fitted multiple means model and the standard error of the residuals are:
+$$\small{\text{Predicted Score}} =  \hat{y}_i = \left\{
+\begin{array}{ll}
+      17.6 \text{ letters, } &  \text{if meaningful sequence} \\
+      8.1 \text{ letters, } &  \text{if meaningless sequence}
+\end{array} 
+\right.  $$
+
+*SE of residuals = 4.49 letters.*
+
+```{r}
+multi.model <- lm(Score ~ 0 + Sequence, data = memory.dat)
+summary(multi.model)
+```
+
+<br> 
+
+#### Effect
+The **effect** of each treatment is the difference of the mean response in the treatment group from the overall mean response. We can write the multiple means model in terms of an overall mean and the effects of the treatment group.
+
+$$\small{\text{Predicted Score}} =  \hat{y}_i = 12.9 + \left\{
+\begin{array}{ll}
+      4.75, \text{ letters, } &  \text{if meaningful sequence} \\
+      -4.75, \text{ letters, } &  \text{if meaningless sequence}
+\end{array} 
+\right.  $$
+
+
+```{r}
+memory.dat$Overallmean <- mean(memory.dat$Score)                      # Overall mean
+memory.dat$Grpmeans <- predict(multi.model)                           # Group means
+memory.dat$Effects <- memory.dat$Grpmeans - memory.dat$Overallmean    # Effects
+
+head(memory.dat, 4)
+```
+
+<br>
+
+#### Partitioning the Total Variability
+The SSTotal represents the total variation in the residuals from the
+single mean model. 
+
+```{r}
+SST <- sum((memory.dat$Score - memory.dat$Overallmean)^2); SST 
+```
+
+<br>
+The SSError represents the leftover variation in the response variable after accounting for the treatment group, i.e., the variation unexplained by the treatment groups.
+
+```{r}
+SSE <- sum((memory.dat$Score - memory.dat$Grpmeans)^2); SSE  # SSE <- sum(resid(multi.model)^2)
+```
+
+<br>
+The SSModel measures the variation in the group means from the overall mean.
+
+```{r}
+SSM <- sum((memory.dat$Grpmeans - memory.dat$Overallmean)^2); SSM
+```
+
+<br>
+To summarize these calculations:
+<p style="text-align: center;"> SSTotal = SSModel + SSError,</p>
+
+and given degrees of freedom (df) for a sum of squares calculation is the number of data points minus the number of parameters estimated, i.e.,
+
+<p style="text-align: center;"> df(SSTotal) = df(SSModel) + df(SSError).</p>
+
+<br>
+The **coefficient of determination**, $\small{R^2}$, is the proportion of the
+total variation in the response variable which is explained by the explanatory variable(s) in the model. Note that $0< \small{R^2} <1$. Larger values of $\small{R^2}$ indicate that more of the variation in the response is explained by the explanatory variable(s).
+
+<p style="text-align: center;"> $\small{R^2}  = \frac{\text{SSModel}}{\text{SSTotal}} = 1-\frac{\text{SSError}}{\text{SSTotal}}$</p>
+
+```{r}
+SSM/SST          
+indicator.model <- lm(Score ~ Sequence, data = memory.dat)
+summary(indicator.model) 
+```
+
+<br> 
+
+#### Effect Size 
+Larger $\small{R^2}$ values indicate less unexplained variation in the response variable and more precise predictions. However, there is no set value for what makes an $\small{R^2}$ value meaningful in a given scenario. Practical significance refers to whether the group differences are large enough to be of value in the scenario, and usually requires subject matter knowledge and/or something to which to compare the group differences. An **effect size** measure compares differences in group means to the standard error of the residuals. In this study, the difference in group means is much larger
+than one residual standard error which seems meaningful in this context.
+
+```{r}
+diff <- memory.dat$Grpmeans[4] - memory.dat$Grpmeans[1]
+SE <- summary(multi.model)$sigma               # SE of residuals (Multiple Means Model)
+
+diff/SE                                        # Effect size              
+```
+
+<br>
+<br>
+<br>
+<br>
+
+### References
+Nathan Tintle et al.(2019). Intermediate Statistical Investigations for U.S. Military Academy at West Point.
