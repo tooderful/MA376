@@ -114,7 +114,7 @@ c. Are the results for the theory-based approach consistent with those from the 
 #### Step 5: Formulate conclusions
 Summarize the conclusions we could draw from this study. How far can we generalize our conclusions?
 
-`r colorize("*We reject the null hypothesis of no difference. The data suggest  that males with Bachelors degrees earn more on average than females with Bachelors degrees. Specifically, we can say with 95% certainty that males earn approximately $15,093 to $22,282 more than females with Bachelors degrees. We would be hesitant to generalize our conclusions to other educational levels.*", "blue")`
+`r colorize("*We reject the null hypothesis of no difference (p-value < 0.001). The data suggest  that males with Bachelors degrees earn more on average than females with Bachelors degrees. Specifically, we can say with 95% certainty that males earn approximately $15,093 to $22,282 more than females with Bachelors degrees. We would be hesitant to generalize our conclusions to other educational levels.*", "blue")`
 
 <br>
  
