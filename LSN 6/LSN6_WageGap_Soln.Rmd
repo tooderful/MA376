@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 ### Background 
-We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%205/Prep%20Files/CEPR_2018_Data2.R).] For this analysis we will focus on a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
+We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%205/Prep%20Files/CEPR_2018_Data2.R).] For this analysis we will evaluate incomes by race for a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
 
 ```{r, message=FALSE, echo=TRUE}
 library('tidyverse')
@@ -98,7 +98,7 @@ b. Are the validity conditions for this theory-based approach satisfied?
 
 ```{r, message=FALSE, echo=TRUE, out.width = '50%',fig.align = "center"}
 theory.resid <- resid(theory.F) 
-hist(theory.resid)       # Histogram of residuals
+hist(theory.resid, main = 'Histogram of Residuals')       # Histogram of residuals
 
 38300/32600              # Largest SD/smallest SD 
 
