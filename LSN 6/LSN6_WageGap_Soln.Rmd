@@ -1,0 +1,135 @@
+---
+title: "Analyzing the Wage Gap"
+author: "by Anny-Claude Joseph"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, message=FALSE, echo=TRUE, include=FALSE, warning=FALSE}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<br>
+
+### Background 
+We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%205/Prep%20Files/CEPR_2018_Data2.R).] For this analysis we will focus on a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
+
+```{r, message=FALSE, echo=TRUE}
+library('tidyverse')
+wage.dat <- read_csv('C:/Users/annyclaude.joseph/Desktop/MA376/CEPR2018_3.csv')
+``` 
+
+<br>
+
+#### Step 1: Ask a research question
+`r colorize("*Is there a racial wealth gap?*", "blue")`
+
+<br>
+
+#### Step 2:  Design a study and collect data
+`r colorize("*In this study there were 955 White, 144 Black, 146 Hispanic, 143 Asian, and 12 individuals who identified as Other with Bachelors degrees who earned $150,000 or less.*", "blue")`
+
+```{r, message=FALSE, echo=TRUE}
+library(table1)
+table1(~Race, data = wage.dat)
+``` 
+
+<br>
+
+#### Step 3: Explore the data
+`r colorize("*The conditional distributions were substantially different. Asian Americans have the highest mean income, followed by White Americans, Americans who identify as Other, Hispanic Americans, and Black Americans. Notably, Black Americans have higher median income compared to Hispanic Americans.*", "blue")`
+  
+
+```{r, message=FALSE, echo=TRUE, out.width = '60%',fig.align = "center"}
+wage.dat %>% ggplot(aes(y=Income,x=Race, fill=Race)) + geom_boxplot() + labs(title = 'Income Distributions Conditional on Race')
+table1(~Income|Race, render='Mean (SD)', data = wage.dat)
+```
+
+<br>
+
+#### Step 4: Draw inferences beyond the data
+The difference is practically meaningful, but is it beyond what we would expect to observe by chance? That is, is the difference in income statistically significant at the $\small \alpha$ = 0.05 significance level? Write the null and alternative hypothesis in words and symbols.
+
+`r colorize("*The null hypothesis is that there is no difference in mean income between the races. The alternative hypothesis is that at least one race has a different mean income.*", "blue")`
+$$\small  H_0: \mu_{\text{White}} = \mu_{\text{Black}} =\mu_{\text{Hispanic}} = \mu_{\text{Asian}} = \mu_{\text{Other}} \\
+\small H_A: \text{ at least one } \mu \text{ is different}$$
+
+
+We can use two approaches to determine statistical significance: the 3S strategy or the theory-based approach.
+
+<p style="text-align: center;"> `r colorize("**A. 3S Strategy**", "Red")`</p>
+
+Use the [Comparing Groups applet](http://www.rossmanchance.com/applets/ComparingGroups.html). Make sure the explanatory and response variables are ordered to match the button above the data and press 'Use Data'. Check the box to 'Show Groups'. Check the 'Show Shuffle Options' box and select the 'Plot' radio button. Use at least 1000 shuffles.  
+
+a) We can use $\small R^2$ as the sample statistic. What is the value of $\small R^2$? Explain what the value means. $\small R^2 =$ 0.015. Less than 2% of the variation in income is explained by race.
+
+b) What is the standardized statistic?
+`r colorize("*F-statistic = 5.29*", "Blue")`
+
+c) Is there evidence of a statistically significant difference in mean income between the races? `r colorize("*Given the p-value < 0.001, we have very strong evidence against the null hypothesis at the 0.05 significance level.*", "Blue")`
+
+
+<p style="text-align: center;"> `r colorize("**B. Theory-based approach**", "Red")`</p>
+
+
+a. What theory-based approach could we use to determine if there was a statistically significant difference in incomes between the racial groups?
+
+`r colorize("*A theoretical F-distribution could be used to determine if there was a statistically significant difference in incomes between the racial groups.*", "blue")`
+
+
+```{r, message=FALSE, echo=TRUE, out.width = '60%',fig.align = "center"}
+theory.F <- lm(Income ~ Race, data = wage.dat)
+summary(theory.F)$r.squared
+anova(theory.F)
+``` 
+
+b. Are the validity conditions for this theory-based approach satisfied?
+
+`r colorize("*1) The racial groups are independent of each other; 2) the standard deviations for the groups are similar (the largest SD/the smallest SD =1.17); and 3) the distribution of the residuals is slightly right skewed.*", "blue")`
+
+```{r, message=FALSE, echo=TRUE, out.width = '50%',fig.align = "center"}
+theory.resid <- resid(theory.F) 
+hist(theory.resid)       # Histogram of residuals
+
+38300/32600              # Largest SD/smallest SD 
+
+``` 
+
+c. Are the results for the theory-based approach consistent with those from the 3S Strategy? `r colorize("*1) The results are consistent. We have strong evidence against the null hypothesis despite the moderate violation in the third validity condition.*", "blue")`
+
+<br>
+ 
+#### Step 5: Formulate conclusions
+Summarize the conclusions we could draw from this study. How far can we generalize our conclusions?  
+
+`r colorize("*We have statistically significant evidence of an association between race and income (p-value < 0.001 for both the simulation-based and theory-based approach). However, race explains less than 2% of the variation we observe in income. Also, we cannot draw any cause-and-effect conclusions as this was not an experimental study. *", "blue")`
+
+<br>
+ 
+#### Step 6: Look back and ahead
+Identify limitations to our approach. What could we do to address them in a future study?
+
+`r colorize("*As previously discussed, a major limitation of this study is that it does not allow us to account for other sources of variation. In future work we could create statistical models that allow us to account for these variables.*", "blue")`
+
+
+<br>
+<br>
+<br>
+<br>
+
+### References
+Center for Economic and Policy Research. March CPS Uniform Extracts, Version 1.1. Washington, DC.
+https://ceprdata.org/cps-uniform-data-extracts/cps-outgoing-rotation-group/cps-org-data/. (2019). Accessed: 2020-08-12.
+
+
+
+
