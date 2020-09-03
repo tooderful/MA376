@@ -1,0 +1,110 @@
+---
+title: "Lesson 6"
+author: ""
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Background 
+We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%206/Prep%20Files/CEPR_2018_Data3.R).] For this analysis we will focus on a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
+
+
+ 
+
+#### Step 1: Ask a research question.  
+
+What is the research question?
+
+ 
+\vspace{.5in}
+
+
+#### Step 2:  Design a study and collect data.
+
+Use no more than three sentences to describe the data. Be sure to indicate how many observational units are in the analysis and what values the variables take on.
+
+ 
+\vspace{1in}
+
+
+#### Step 3: Explore the data.
+Use boxplots to plot the conditional distributions of income between the races. Consider whether there appears to be an association between the two variables.
+
+ 
+\vspace{.75in}
+
+#### Step 4: Draw inferences beyond the data.
+
+The difference in income is practically meaningful, but is it beyond what we would expect to observe by chance? That is, is the difference in income statistically significant at the $\small \alpha$ = 0.05 significance level? Write the null and alternative hypothesis in words and symbols.
+
+ 
+\vspace{1.5in}
+
+We can use two approaches to determine statistical significance: the 3S strategy or the theory-based approach.
+
+***A. 3S Strategy***
+
+Use the [Comparing Groups applet](http://www.rossmanchance.com/applets/ComparingGroups.html). Make sure the explanatory and response variables are ordered to match the button above the data and press 'Use Data'. Check the box to 'Show Groups'. Check the 'Show Shuffle Options' box and select the 'Plot' radio button. Use at least 1000 shuffles.  
+
+a) We can use $\small R^2$ as the sample statistic. What is the value of $\small R^2$? Explain what the value means.
+
+ 
+\vspace{.5in}
+
+b) What is the standardized statistic?
+
+ 
+\vspace{.5in}
+
+c) Is there evidence of a statistically significant difference in mean income between the races? 
+
+ 
+\vspace{.75in}
+
+***B. Theory-based approach*** 
+
+a. What theory-based approach could we use to determine if there was a statistically significant difference in incomes between the racial groups?
+
+ 
+\vspace{.5in}
+
+ 
+b. Are the validity conditions for this theory-based approach satisfied?
+
+ 
+\vspace{1in}
+
+ 
+c. Are the results for the theory-based approach consistent with those from the 3S Strategy? 
+
+ 
+\vspace{.25in}  
+ 
+ 
+#### Step 5: Formulate conclusions.
+Summarize the conclusions we could draw from this study. How far can we generalize our conclusions?
+
+ 
+\vspace{1in} 
+
+ 
+ 
+#### Step 6: Look back and ahead.
+Identify limitations to our approach. What could we do to address them in a future study?
+
+ 
+\vspace{0.85in} 
+
+
+ 
+
+### References
+Center for Economic and Policy Research. March CPS Uniform Extracts, Version 1.1. Washington, DC.
+https://ceprdata.org/cps-uniform-data-extracts/cps-outgoing-rotation-group/cps-org-data/. (2019). Accessed: 2020-08-12.
+
+
+
+
