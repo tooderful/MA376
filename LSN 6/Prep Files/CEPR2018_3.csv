@@ -1,0 +1,1401 @@
+Income,Age,Sex,Race,Education,MaritalStatus,Employed
+25000,78,M,White,Bachelors,Divorced,Yes
+49000,62,M,White,Bachelors,Divorced,Yes
+63000,28,M,White,Bachelors,Divorced,Yes
+99000,47,M,Asian,Bachelors,Married,Yes
+105000,50,M,White,Bachelors,Married,Yes
+63000,53,M,Black,Bachelors,Married,Yes
+40800,44,M,White,Bachelors,Married,Yes
+45000,47,M,Asian,Bachelors,Married,Yes
+45000,37,M,White,Bachelors,Married,Yes
+70000,67,M,Black,Bachelors,Married,Yes
+86000,40,M,White,Bachelors,Married,Yes
+150000,45,M,Hispanic,Bachelors,Married,Yes
+108000,32,M,Asian,Bachelors,Married,Yes
+130000,28,M,Hispanic,Bachelors,Never Married,Yes
+7200,54,M,White,Bachelors,Married,Yes
+87000,34,M,Black,Bachelors,Separated,Yes
+12000,45,M,White,Bachelors,Married,Yes
+13000,57,M,White,Bachelors,Never Married,Yes
+90000,34,M,White,Bachelors,Married,Yes
+29000,49,M,White,Bachelors,Married,Yes
+3000,23,M,White,Bachelors,Never Married,Yes
+110000,35,M,Hispanic,Bachelors,Married,Yes
+115000,31,M,White,Bachelors,Never Married,Yes
+77172,41,M,White,Bachelors,Married,Yes
+120000,42,M,White,Bachelors,Married,Yes
+13305,57,M,White,Bachelors,Married,Yes
+27000,22,M,White,Bachelors,Never Married,Yes
+46736,29,M,White,Bachelors,Married,Yes
+8000,30,M,White,Bachelors,Married,Yes
+10000,25,M,White,Bachelors,Never Married,No
+60002,24,M,Hispanic,Bachelors,Never Married,Yes
+55000,35,M,White,Bachelors,Married,Yes
+9900,37,M,White,Bachelors,Divorced,Yes
+1800,28,M,White,Bachelors,Never Married,Yes
+65000,33,M,White,Bachelors,Divorced,Yes
+95000,26,M,Black,Bachelors,Never Married,Yes
+6700,59,M,White,Bachelors,Divorced,Yes
+40000,40,M,White,Bachelors,Married,Yes
+40000,68,M,Other,Bachelors,Married,Yes
+120000,47,M,White,Bachelors,Married,Yes
+125000,52,M,White,Bachelors,Divorced,Yes
+120000,51,M,White,Bachelors,Married,Yes
+120000,55,M,White,Bachelors,Married,Yes
+28000,25,M,White,Bachelors,Never Married,Yes
+144000,56,M,Hispanic,Bachelors,Divorced,Yes
+91000,54,M,Asian,Bachelors,Married,Yes
+46000,50,M,White,Bachelors,Married,Yes
+15000,34,M,Asian,Bachelors,Never Married,No
+105000,45,M,White,Bachelors,Married,Yes
+1.00E+05,79,M,White,Bachelors,Married,Yes
+38000,35,M,White,Bachelors,Divorced,Yes
+50000,31,M,White,Bachelors,Never Married,Yes
+30000,25,M,White,Bachelors,Never Married,Yes
+1.00E+05,59,M,Black,Bachelors,Divorced,Yes
+70000,51,M,Other,Bachelors,Married,Yes
+1.00E+05,55,M,Hispanic,Bachelors,Married,Yes
+61000,31,M,White,Bachelors,Never Married,Yes
+1.00E+05,34,M,Asian,Bachelors,Married,Yes
+52000,36,M,White,Bachelors,Never Married,Yes
+105000,52,M,White,Bachelors,Married,Yes
+1.00E+05,35,M,Hispanic,Bachelors,Married,Yes
+70000,29,M,White,Bachelors,Never Married,Yes
+95000,49,M,White,Bachelors,Married,Yes
+40000,36,M,White,Bachelors,Married,Yes
+142000,60,M,White,Bachelors,Divorced,Yes
+140000,30,M,White,Bachelors,Married,Yes
+88000,44,M,White,Bachelors,Married,Yes
+57000,36,M,White,Bachelors,Married,Yes
+65000,31,M,White,Bachelors,Never Married,Yes
+115000,37,M,White,Bachelors,Married,Yes
+63000,67,M,White,Bachelors,Married,Yes
+125000,30,M,White,Bachelors,Married,Yes
+48000,49,M,White,Bachelors,Married,Yes
+75000,31,M,White,Bachelors,Married,Yes
+19100,45,M,White,Bachelors,Married,Yes
+72000,26,M,Asian,Bachelors,Never Married,Yes
+46800,37,M,White,Bachelors,Married,Yes
+150000,34,M,White,Bachelors,Married,Yes
+34000,37,M,Black,Bachelors,Married,Yes
+7000,26,M,Hispanic,Bachelors,Never Married,Yes
+107000,59,M,Hispanic,Bachelors,Married,Yes
+42000,28,M,White,Bachelors,Never Married,Yes
+48000,41,M,White,Bachelors,Married,Yes
+35200,33,M,White,Bachelors,Married,Yes
+40000,63,M,Asian,Bachelors,Married,Yes
+120000,47,M,White,Bachelors,Married,Yes
+23000,23,M,White,Bachelors,Never Married,Yes
+35000,54,M,White,Bachelors,Married,Yes
+65000,39,M,White,Bachelors,Married,Yes
+80000,61,M,White,Bachelors,Married,Yes
+70000,41,M,White,Bachelors,Never Married,Yes
+150000,36,M,White,Bachelors,Married,Yes
+98300,62,M,White,Bachelors,Married,Yes
+20800,58,M,Black,Bachelors,Married,Yes
+54000,30,M,White,Bachelors,Never Married,Yes
+130000,68,M,White,Bachelors,Married,Yes
+52000,28,M,White,Bachelors,Never Married,Yes
+51000,25,M,White,Bachelors,Never Married,Yes
+70000,32,M,Black,Bachelors,Married,Yes
+50000,27,M,White,Bachelors,Never Married,Yes
+64995,62,M,White,Bachelors,Married,Yes
+36000,30,M,Asian,Bachelors,Never Married,No
+120000,42,M,Asian,Bachelors,Married,Yes
+89000,46,M,White,Bachelors,Married,Yes
+108000,53,M,White,Bachelors,Married,Yes
+13700,37,M,Black,Bachelors,Never Married,Yes
+50000,34,M,White,Bachelors,Never Married,Yes
+40000,34,M,Hispanic,Bachelors,Never Married,Yes
+1.00E+05,47,M,White,Bachelors,Married,Yes
+32000,48,M,White,Bachelors,Married,Yes
+43000,45,M,White,Bachelors,Married,Yes
+55000,59,M,Hispanic,Bachelors,Divorced,Yes
+75000,37,M,White,Bachelors,Married,Yes
+107000,53,M,White,Bachelors,Married,Yes
+55000,28,M,White,Bachelors,Never Married,Yes
+100100,48,M,White,Bachelors,Married,Yes
+65000,42,M,Asian,Bachelors,Married,Yes
+60000,38,M,White,Bachelors,Married,Yes
+93000,56,M,White,Bachelors,Married,Yes
+50000,45,M,Hispanic,Bachelors,Married,Yes
+24000,29,M,Black,Bachelors,Never Married,Yes
+28000,35,M,Black,Bachelors,Married,Yes
+130000,56,M,White,Bachelors,Married,Yes
+130000,27,M,White,Bachelors,Never Married,Yes
+80000,47,M,White,Bachelors,Married,Yes
+65000,58,M,White,Bachelors,Married,Yes
+85000,33,M,Asian,Bachelors,Never Married,Yes
+30000,28,M,White,Bachelors,Never Married,Yes
+91000,41,M,White,Bachelors,Never Married,Yes
+25000,31,M,White,Bachelors,Married,Yes
+8000,24,M,Asian,Bachelors,Never Married,No
+30000,42,M,White,Bachelors,Married,Yes
+42600,70,M,Asian,Bachelors,Married,Yes
+16000,22,M,White,Bachelors,Never Married,Yes
+97000,40,M,White,Bachelors,Married,Yes
+1.00E+05,65,M,Black,Bachelors,Married,Yes
+56000,66,M,Other,Bachelors,Divorced,Yes
+90000,28,M,Asian,Bachelors,Married,Yes
+46736,51,M,White,Bachelors,Married,Yes
+36500,35,M,Hispanic,Bachelors,Married,Yes
+90000,53,M,White,Bachelors,Married,Yes
+70000,37,M,Asian,Bachelors,Married,Yes
+55000,28,M,Black,Bachelors,Never Married,Yes
+49000,27,M,Black,Bachelors,Never Married,Yes
+38500,56,M,Hispanic,Bachelors,Married,Yes
+150000,56,M,White,Bachelors,Married,Yes
+6136,68,M,White,Bachelors,Married,Yes
+72000,52,M,White,Bachelors,Married,Yes
+8000,75,M,White,Bachelors,Married,Yes
+29000,41,M,Hispanic,Bachelors,Separated,Yes
+76000,63,M,White,Bachelors,Married,Yes
+75000,30,M,White,Bachelors,Never Married,Yes
+56000,51,M,White,Bachelors,Divorced,Yes
+94000,35,M,White,Bachelors,Married,Yes
+15000,25,M,White,Bachelors,Never Married,Yes
+1.00E+05,60,M,White,Bachelors,Married,No
+115000,55,M,White,Bachelors,Married,Yes
+80000,59,M,White,Bachelors,Married,Yes
+800,22,M,White,Bachelors,Never Married,Yes
+75000,54,M,White,Bachelors,Married,Yes
+20000,42,M,Black,Bachelors,Never Married,Yes
+58000,66,M,White,Bachelors,Married,Yes
+35000,38,M,White,Bachelors,Never Married,Yes
+60000,65,M,Asian,Bachelors,Married,Yes
+19200,28,M,Hispanic,Bachelors,Never Married,Yes
+22000,27,M,Hispanic,Bachelors,Never Married,Yes
+58000,34,M,White,Bachelors,Married,Yes
+35000,31,M,Asian,Bachelors,Married,Yes
+97000,38,M,White,Bachelors,Married,Yes
+40000,58,M,Black,Bachelors,Never Married,Yes
+89000,49,M,White,Bachelors,Married,Yes
+50600,33,M,White,Bachelors,Married,Yes
+104000,59,M,White,Bachelors,Divorced,Yes
+50000,54,M,White,Bachelors,Married,Yes
+92000,40,M,Hispanic,Bachelors,Married,Yes
+50000,40,M,White,Bachelors,Married,No
+90000,51,M,White,Bachelors,Married,Yes
+90000,49,M,White,Bachelors,Divorced,Yes
+55000,41,M,White,Bachelors,Never Married,Yes
+87000,26,M,Asian,Bachelors,Never Married,Yes
+1.00E+05,49,M,White,Bachelors,Married,Yes
+60000,26,M,White,Bachelors,Never Married,Yes
+90000,39,M,White,Bachelors,Divorced,Yes
+65000,51,M,White,Bachelors,Married,Yes
+70000,23,M,White,Bachelors,Never Married,Yes
+62000,31,M,White,Bachelors,Married,Yes
+75000,33,M,Asian,Bachelors,Married,Yes
+42000,30,M,White,Bachelors,Never Married,Yes
+85000,33,M,Asian,Bachelors,Never Married,Yes
+58000,30,M,White,Bachelors,Never Married,Yes
+30000,48,M,White,Bachelors,Separated,Yes
+95000,50,M,White,Bachelors,Married,Yes
+101000,55,M,White,Bachelors,Married,Yes
+25000,22,M,White,Bachelors,Never Married,Yes
+140000,52,M,Black,Bachelors,Married,Yes
+82000,30,M,White,Bachelors,Married,Yes
+24000,36,M,White,Bachelors,Married,Yes
+45000,35,M,White,Bachelors,Married,Yes
+60000,30,M,Asian,Bachelors,Married,Yes
+45000,49,M,White,Bachelors,Widowed,Yes
+47000,38,M,Black,Bachelors,Never Married,Yes
+2500,33,M,Hispanic,Bachelors,Married,No
+60000,57,M,White,Bachelors,Married,Yes
+150000,36,M,White,Bachelors,Never Married,Yes
+44000,40,M,Black,Bachelors,Married,Yes
+1.00E+05,35,M,White,Bachelors,Married,Yes
+65000,54,M,White,Bachelors,Married,Yes
+42500,58,M,White,Bachelors,Married,Yes
+24000,43,M,Black,Bachelors,Never Married,Yes
+50000,59,M,White,Bachelors,Married,Yes
+26000,34,M,White,Bachelors,Never Married,Yes
+48000,75,M,Hispanic,Bachelors,Married,Yes
+137000,28,M,White,Bachelors,Married,Yes
+6000,51,M,Hispanic,Bachelors,Never Married,No
+102000,60,M,White,Bachelors,Married,Yes
+66000,39,M,White,Bachelors,Married,Yes
+120000,49,M,White,Bachelors,Married,Yes
+40000,39,M,Asian,Bachelors,Never Married,Yes
+55000,56,M,Hispanic,Bachelors,Married,Yes
+92000,35,M,White,Bachelors,Married,Yes
+13160,26,M,White,Bachelors,Never Married,Yes
+70000,28,M,White,Bachelors,Never Married,Yes
+59000,50,M,White,Bachelors,Divorced,Yes
+80000,45,M,White,Bachelors,Married,Yes
+32000,52,M,White,Bachelors,Widowed,Yes
+80000,52,M,White,Bachelors,Married,Yes
+54000,70,M,White,Bachelors,Married,Yes
+85000,36,M,White,Bachelors,Never Married,Yes
+55000,27,M,Hispanic,Bachelors,Never Married,Yes
+37000,58,M,Asian,Bachelors,Married,Yes
+69000,54,M,White,Bachelors,Married,Yes
+110000,50,M,White,Bachelors,Married,Yes
+50000,33,M,Black,Bachelors,Married,Yes
+45000,69,M,White,Bachelors,Married,Yes
+82000,36,M,Hispanic,Bachelors,Married,Yes
+80000,40,M,White,Bachelors,Married,Yes
+37000,29,M,Black,Bachelors,Never Married,Yes
+90000,38,M,White,Bachelors,Married,Yes
+95000,40,M,White,Bachelors,Married,Yes
+80000,54,M,White,Bachelors,Married,Yes
+35000,25,M,Hispanic,Bachelors,Married,Yes
+42000,51,M,Asian,Bachelors,Married,Yes
+5198,30,M,Black,Bachelors,Never Married,Yes
+25000,50,M,White,Bachelors,Married,Yes
+120000,51,M,White,Bachelors,Married,Yes
+70000,44,M,Asian,Bachelors,Married,Yes
+135000,30,M,White,Bachelors,Married,Yes
+55000,26,M,Asian,Bachelors,Never Married,Yes
+25000,31,M,White,Bachelors,Never Married,Yes
+84000,76,M,White,Bachelors,Widowed,Yes
+90000,45,M,White,Bachelors,Married,Yes
+42018,45,M,White,Bachelors,Married,Yes
+32000,28,M,Hispanic,Bachelors,Never Married,Yes
+65000,31,M,White,Bachelors,Never Married,Yes
+43000,45,M,White,Bachelors,Divorced,Yes
+49500,31,M,White,Bachelors,Married,Yes
+130000,44,M,Black,Bachelors,Married,Yes
+40000,55,M,White,Bachelors,Married,Yes
+40000,76,M,White,Bachelors,Married,Yes
+45000,55,M,White,Bachelors,Never Married,No
+38000,62,M,Hispanic,Bachelors,Married,No
+67000,52,M,White,Bachelors,Married,Yes
+91000,47,M,White,Bachelors,Married,Yes
+1.00E+05,34,M,White,Bachelors,Married,Yes
+80000,27,M,White,Bachelors,Never Married,Yes
+107000,41,M,White,Bachelors,Married,Yes
+80000,48,M,White,Bachelors,Married,Yes
+80000,35,M,White,Bachelors,Married,Yes
+6000,62,M,White,Bachelors,Married,No
+67000,39,M,Asian,Bachelors,Married,Yes
+80000,37,M,White,Bachelors,Married,No
+1.00E+05,41,M,White,Bachelors,Never Married,Yes
+46295,41,M,White,Bachelors,Married,Yes
+65000,47,M,Hispanic,Bachelors,Married,Yes
+70000,53,M,White,Bachelors,Married,Yes
+40000,25,M,White,Bachelors,Never Married,Yes
+35000,41,M,White,Bachelors,Married,Yes
+43000,54,M,White,Bachelors,Divorced,Yes
+75000,26,M,White,Bachelors,Never Married,Yes
+35000,41,M,Asian,Bachelors,Never Married,Yes
+39988,56,M,White,Bachelors,Married,Yes
+90000,23,M,White,Bachelors,Married,Yes
+1.00E+05,60,M,Asian,Bachelors,Married,Yes
+120000,51,M,White,Bachelors,Married,Yes
+50000,59,M,White,Bachelors,Married,Yes
+42002,28,M,White,Bachelors,Never Married,Yes
+40000,59,M,White,Bachelors,Married,Yes
+81600,47,M,White,Bachelors,Married,Yes
+4600,66,M,Asian,Bachelors,Never Married,Yes
+24000,27,M,Hispanic,Bachelors,Married,Yes
+125000,40,M,Asian,Bachelors,Married,Yes
+85000,35,M,Asian,Bachelors,Married,Yes
+22000,32,M,White,Bachelors,Never Married,Yes
+47000,35,M,Asian,Bachelors,Married,Yes
+76000,59,M,White,Bachelors,Married,Yes
+65000,44,M,White,Bachelors,Married,Yes
+35000,41,M,White,Bachelors,Divorced,Yes
+32000,39,M,White,Bachelors,Never Married,Yes
+56000,28,M,White,Bachelors,Married,Yes
+110000,45,M,White,Bachelors,Married,Yes
+45000,49,M,White,Bachelors,Married,Yes
+130000,34,M,Other,Bachelors,Married,Yes
+2500,37,M,Black,Bachelors,Married,No
+65000,30,M,Black,Bachelors,Never Married,Yes
+30000,45,M,White,Bachelors,Married,Yes
+30000,40,M,White,Bachelors,Married,Yes
+120000,42,M,White,Bachelors,Married,Yes
+75000,41,M,White,Bachelors,Married,Yes
+34688,44,M,White,Bachelors,Separated,Yes
+25000,25,M,White,Bachelors,Married,Yes
+28000,36,M,White,Bachelors,Married,No
+38000,28,M,White,Bachelors,Married,Yes
+5000,50,M,Hispanic,Bachelors,Married,No
+1.00E+05,31,M,White,Bachelors,Married,Yes
+90000,50,M,Asian,Bachelors,Married,Yes
+46000,40,M,White,Bachelors,Married,Yes
+42000,50,M,Hispanic,Bachelors,Never Married,Yes
+80000,32,M,White,Bachelors,Married,Yes
+70000,57,M,White,Bachelors,Married,Yes
+60000,49,M,White,Bachelors,Married,Yes
+80500,45,M,White,Bachelors,Married,Yes
+25000,30,M,White,Bachelors,Never Married,Yes
+60000,48,M,White,Bachelors,Married,Yes
+18000,26,M,Hispanic,Bachelors,Never Married,Yes
+40500,28,M,White,Bachelors,Married,Yes
+120000,52,M,White,Bachelors,Married,Yes
+128000,46,M,Hispanic,Bachelors,Married,Yes
+115000,51,M,White,Bachelors,Married,Yes
+150000,36,M,Asian,Bachelors,Married,Yes
+70000,38,M,Hispanic,Bachelors,Married,Yes
+22000,74,M,White,Bachelors,Married,Yes
+72000,54,M,White,Bachelors,Never Married,Yes
+68000,36,M,White,Bachelors,Married,Yes
+124000,53,M,White,Bachelors,Married,Yes
+54000,49,M,White,Bachelors,Married,Yes
+1.00E+05,48,M,White,Bachelors,Married,Yes
+42000,33,M,White,Bachelors,Married,Yes
+106000,34,M,White,Bachelors,Married,Yes
+25000,62,M,Hispanic,Bachelors,Never Married,Yes
+1.00E+05,31,M,White,Bachelors,Married,Yes
+75000,29,M,White,Bachelors,Married,Yes
+26000,37,M,Asian,Bachelors,Married,Yes
+120000,59,M,White,Bachelors,Married,Yes
+105000,54,M,Hispanic,Bachelors,Divorced,Yes
+45000,23,M,White,Bachelors,Never Married,Yes
+80000,30,M,White,Bachelors,Married,Yes
+70000,25,M,White,Bachelors,Married,Yes
+30000,30,M,Hispanic,Bachelors,Never Married,Yes
+31000,51,M,White,Bachelors,Married,Yes
+75000,39,M,White,Bachelors,Married,Yes
+77000,31,M,Hispanic,Bachelors,Married,Yes
+55000,37,M,Black,Bachelors,Never Married,Yes
+140000,24,M,White,Bachelors,Never Married,Yes
+25000,51,M,White,Bachelors,Divorced,Yes
+50000,67,M,White,Bachelors,Married,Yes
+117000,52,M,White,Bachelors,Married,Yes
+49000,36,M,White,Bachelors,Married,Yes
+1800,29,M,White,Bachelors,Divorced,Yes
+56000,30,M,Hispanic,Bachelors,Never Married,Yes
+28000,58,M,Asian,Bachelors,Married,Yes
+150000,36,M,Asian,Bachelors,Married,Yes
+120000,32,M,White,Bachelors,Married,Yes
+58080,54,M,White,Bachelors,Divorced,Yes
+110000,52,M,Asian,Bachelors,Married,Yes
+110000,43,M,Asian,Bachelors,Married,Yes
+115000,44,M,White,Bachelors,Married,Yes
+25207,49,M,White,Bachelors,Divorced,Yes
+1.00E+05,46,M,White,Bachelors,Married,Yes
+62000,35,M,Asian,Bachelors,Never Married,Yes
+70000,45,M,White,Bachelors,Divorced,Yes
+50000,24,M,White,Bachelors,Never Married,Yes
+43000,51,M,White,Bachelors,Married,Yes
+42000,63,M,White,Bachelors,Married,Yes
+2000,65,M,Black,Bachelors,Married,Yes
+115000,36,M,Asian,Bachelors,Married,Yes
+150000,33,M,White,Bachelors,Married,Yes
+75000,26,M,White,Bachelors,Never Married,Yes
+1960,36,M,White,Bachelors,Never Married,Yes
+55000,47,M,Other,Bachelors,Never Married,Yes
+24000,22,M,Black,Bachelors,Married,Yes
+110000,29,M,White,Bachelors,Married,Yes
+40000,55,M,White,Bachelors,Married,Yes
+20000,49,M,White,Bachelors,Married,Yes
+35000,69,M,White,Bachelors,Married,Yes
+130000,62,M,White,Bachelors,Married,Yes
+90000,36,M,Asian,Bachelors,Married,Yes
+72000,48,M,White,Bachelors,Married,Yes
+1.00E+05,44,M,White,Bachelors,Married,Yes
+6000,29,M,White,Bachelors,Married,Yes
+39671,35,M,Black,Bachelors,Married,Yes
+14500,28,M,Hispanic,Bachelors,Never Married,Yes
+1.00E+05,30,M,White,Bachelors,Never Married,Yes
+53000,38,M,White,Bachelors,Married,Yes
+5364,65,M,Asian,Bachelors,Married,Yes
+93001,38,M,White,Bachelors,Never Married,Yes
+55000,35,M,Hispanic,Bachelors,Married,Yes
+52000,38,M,Hispanic,Bachelors,Married,Yes
+43000,31,M,White,Bachelors,Married,Yes
+12000,21,M,White,Bachelors,Never Married,Yes
+9660,22,M,Hispanic,Bachelors,Never Married,Yes
+41000,38,M,Hispanic,Bachelors,Married,Yes
+125000,22,M,White,Bachelors,Never Married,Yes
+53000,27,M,White,Bachelors,Divorced,Yes
+70000,49,M,White,Bachelors,Divorced,Yes
+80000,45,M,White,Bachelors,Married,Yes
+50000,40,M,Black,Bachelors,Never Married,Yes
+45000,38,M,White,Bachelors,Married,Yes
+45000,26,M,White,Bachelors,Never Married,Yes
+10000,35,M,Black,Bachelors,Never Married,No
+74916,32,M,White,Bachelors,Never Married,Yes
+105000,36,M,Black,Bachelors,Married,Yes
+125000,44,M,White,Bachelors,Married,Yes
+150000,52,M,White,Bachelors,Married,Yes
+35000,32,M,White,Bachelors,Married,Yes
+1.00E+05,49,M,White,Bachelors,Married,Yes
+9000,30,M,Black,Bachelors,Married,Yes
+30492,43,M,White,Bachelors,Married,Yes
+79500,53,M,Black,Bachelors,Married,Yes
+60000,68,M,White,Bachelors,Never Married,Yes
+140000,43,M,Asian,Bachelors,Never Married,Yes
+30000,57,M,White,Bachelors,Married,Yes
+150000,43,M,White,Bachelors,Married,Yes
+55000,33,M,White,Bachelors,Married,Yes
+75000,27,M,White,Bachelors,Married,Yes
+60000,26,M,White,Bachelors,Never Married,Yes
+90000,34,M,Asian,Bachelors,Married,Yes
+87000,50,M,White,Bachelors,Married,Yes
+54000,33,M,White,Bachelors,Married,Yes
+90000,24,M,Hispanic,Bachelors,Never Married,Yes
+60000,24,M,Asian,Bachelors,Never Married,Yes
+74000,66,M,White,Bachelors,Married,Yes
+65002,34,M,Asian,Bachelors,Never Married,Yes
+400,20,M,Black,Bachelors,Never Married,No
+85000,70,M,White,Bachelors,Married,Yes
+76000,60,M,Black,Bachelors,Married,Yes
+120000,33,M,Asian,Bachelors,Married,Yes
+95000,30,M,White,Bachelors,Married,Yes
+55000,37,M,White,Bachelors,Divorced,Yes
+130000,55,M,White,Bachelors,Married,Yes
+95850,85,M,White,Bachelors,Married,Yes
+90000,54,M,White,Bachelors,Married,Yes
+130000,59,M,White,Bachelors,Married,Yes
+58080,62,M,White,Bachelors,Divorced,Yes
+63000,36,M,White,Bachelors,Married,Yes
+84000,46,M,White,Bachelors,Married,Yes
+50000,47,M,White,Bachelors,Never Married,Yes
+120000,46,M,Asian,Bachelors,Divorced,Yes
+46390,61,M,White,Bachelors,Married,Yes
+120000,44,M,White,Bachelors,Married,Yes
+60000,67,M,White,Bachelors,Married,Yes
+25920,22,M,White,Bachelors,Never Married,Yes
+55000,34,M,White,Bachelors,Never Married,Yes
+98000,34,M,Other,Bachelors,Divorced,Yes
+78000,46,M,White,Bachelors,Married,Yes
+65000,35,M,Hispanic,Bachelors,Never Married,Yes
+1.00E+05,57,M,White,Bachelors,Married,Yes
+40000,27,M,Hispanic,Bachelors,Never Married,Yes
+17002,70,M,Hispanic,Bachelors,Married,Yes
+47000,44,M,White,Bachelors,Married,Yes
+45000,44,M,Black,Bachelors,Married,Yes
+120000,43,M,White,Bachelors,Married,Yes
+82000,55,M,White,Bachelors,Never Married,Yes
+60000,36,M,White,Bachelors,Married,Yes
+43000,29,M,White,Bachelors,Married,Yes
+8500,23,M,White,Bachelors,Never Married,No
+34500,23,M,White,Bachelors,Never Married,Yes
+1.00E+05,40,M,White,Bachelors,Married,Yes
+69500,54,M,White,Bachelors,Married,Yes
+1.00E+05,46,M,White,Bachelors,Married,Yes
+1.00E+05,40,M,White,Bachelors,Married,Yes
+90000,55,M,White,Bachelors,Married,Yes
+40000,31,M,White,Bachelors,Married,Yes
+100002,28,M,White,Bachelors,Married,Yes
+88000,44,M,White,Bachelors,Married,Yes
+53000,24,M,White,Bachelors,Never Married,Yes
+95000,34,M,White,Bachelors,Married,Yes
+45000,45,M,Asian,Bachelors,Married,Yes
+148000,69,M,White,Bachelors,Married,Yes
+85000,40,M,White,Bachelors,Married,Yes
+43002,35,M,White,Bachelors,Married,Yes
+120000,51,M,Asian,Bachelors,Married,Yes
+107000,37,M,White,Bachelors,Married,Yes
+48000,41,M,Black,Bachelors,Married,Yes
+14000,51,M,White,Bachelors,Married,Yes
+38002,37,M,White,Bachelors,Married,Yes
+25000,53,M,Black,Bachelors,Never Married,No
+72000,32,M,Asian,Bachelors,Married,Yes
+150000,49,M,White,Bachelors,Married,Yes
+20010,28,M,White,Bachelors,Married,Yes
+50039,24,M,White,Bachelors,Never Married,Yes
+70000,48,M,White,Bachelors,Married,Yes
+14000,23,M,White,Bachelors,Never Married,Yes
+20000,63,M,Hispanic,Bachelors,Divorced,Yes
+19000,24,M,White,Bachelors,Never Married,Yes
+60000,29,M,White,Bachelors,Married,Yes
+77000,46,M,White,Bachelors,Married,Yes
+60000,29,M,Asian,Bachelors,Never Married,Yes
+55000,26,M,White,Bachelors,Never Married,Yes
+1.00E+05,60,M,Asian,Bachelors,Married,Yes
+1.00E+05,53,M,White,Bachelors,Married,Yes
+20000,22,M,White,Bachelors,Never Married,No
+95850,56,M,White,Bachelors,Married,Yes
+112000,41,M,White,Bachelors,Married,Yes
+100664,44,M,White,Bachelors,Married,Yes
+35000,36,M,White,Bachelors,Married,Yes
+150000,42,M,White,Bachelors,Married,Yes
+104000,38,M,White,Bachelors,Divorced,Yes
+120000,46,M,White,Bachelors,Married,Yes
+80000,61,M,White,Bachelors,Married,Yes
+112002,31,M,Asian,Bachelors,Never Married,Yes
+40000,31,M,White,Bachelors,Married,Yes
+36000,30,M,White,Bachelors,Married,Yes
+65000,46,M,Black,Bachelors,Widowed,Yes
+1.00E+05,46,M,White,Bachelors,Married,Yes
+76000,32,M,White,Bachelors,Married,Yes
+46500,69,M,White,Bachelors,Married,Yes
+35000,61,M,Asian,Bachelors,Married,Yes
+75000,27,M,White,Bachelors,Never Married,Yes
+75000,28,M,White,Bachelors,Never Married,Yes
+48000,25,M,White,Bachelors,Never Married,Yes
+122000,45,M,White,Bachelors,Married,Yes
+92800,31,M,Asian,Bachelors,Never Married,Yes
+76000,47,M,Hispanic,Bachelors,Married,Yes
+1058,36,M,White,Bachelors,Married,Yes
+46000,56,M,White,Bachelors,Married,Yes
+30000,35,M,White,Bachelors,Never Married,Yes
+42000,26,M,White,Bachelors,Never Married,Yes
+101000,58,M,White,Bachelors,Married,Yes
+29000,32,M,White,Bachelors,Married,Yes
+10200,21,M,White,Bachelors,Never Married,Yes
+60000,34,M,Asian,Bachelors,Divorced,Yes
+87000,48,M,White,Bachelors,Divorced,Yes
+70000,32,M,White,Bachelors,Married,Yes
+10000,42,M,Black,Bachelors,Married,Yes
+135000,48,M,White,Bachelors,Married,Yes
+30000,42,M,White,Bachelors,Never Married,Yes
+31400,22,M,White,Bachelors,Never Married,Yes
+150000,56,M,White,Bachelors,Married,Yes
+17002,64,M,Hispanic,Bachelors,Separated,Yes
+80600,26,M,White,Bachelors,Married,Yes
+1.00E+05,43,M,White,Bachelors,Married,Yes
+40000,42,M,White,Bachelors,Married,Yes
+52000,63,M,White,Bachelors,Married,Yes
+27000,27,M,Asian,Bachelors,Never Married,Yes
+35000,37,M,Hispanic,Bachelors,Married,Yes
+10000,47,M,White,Bachelors,Never Married,Yes
+30000,56,M,White,Bachelors,Married,Yes
+50000,60,M,Black,Bachelors,Married,Yes
+135000,38,M,White,Bachelors,Never Married,Yes
+80000,29,M,White,Bachelors,Never Married,Yes
+44000,29,M,White,Bachelors,Married,Yes
+43000,25,M,Black,Bachelors,Never Married,Yes
+57000,51,M,White,Bachelors,Married,Yes
+112000,44,M,White,Bachelors,Married,Yes
+150000,41,M,White,Bachelors,Married,No
+95000,36,M,White,Bachelors,Never Married,Yes
+30000,44,M,Hispanic,Bachelors,Never Married,No
+3000,78,M,White,Bachelors,Married,No
+120000,51,M,White,Bachelors,Married,Yes
+27500,27,M,Black,Bachelors,Never Married,Yes
+48000,42,M,White,Bachelors,Never Married,Yes
+1.00E+05,50,M,Other,Bachelors,Married,Yes
+110000,53,M,White,Bachelors,Married,Yes
+90000,50,M,Hispanic,Bachelors,Separated,Yes
+50000,64,M,White,Bachelors,Married,No
+36000,48,M,White,Bachelors,Married,Yes
+10000,26,M,Hispanic,Bachelors,Never Married,Yes
+33500,69,M,White,Bachelors,Married,Yes
+150000,31,M,Black,Bachelors,Never Married,Yes
+16870,30,M,White,Bachelors,Married,Yes
+4700,29,M,Black,Bachelors,Married,Yes
+27500,27,M,Black,Bachelors,Never Married,Yes
+55000,47,M,White,Bachelors,Married,Yes
+135000,37,M,Hispanic,Bachelors,Never Married,Yes
+47000,54,M,Asian,Bachelors,Married,Yes
+7000,61,M,White,Bachelors,Divorced,Yes
+36000,51,M,White,Bachelors,Married,Yes
+50000,32,M,White,Bachelors,Never Married,Yes
+15000,24,M,Black,Bachelors,Never Married,Yes
+80000,51,M,White,Bachelors,Divorced,Yes
+1.00E+05,54,M,White,Bachelors,Married,No
+45000,56,M,Black,Bachelors,Married,Yes
+90000,58,M,White,Bachelors,Married,Yes
+1.00E+05,59,M,White,Bachelors,Married,Yes
+96000,39,M,Hispanic,Bachelors,Married,Yes
+135000,58,M,White,Bachelors,Married,Yes
+30000,38,M,Hispanic,Bachelors,Divorced,Yes
+85000,34,M,Hispanic,Bachelors,Married,Yes
+60000,27,M,White,Bachelors,Married,Yes
+22000,80,M,White,Bachelors,Married,Yes
+47000,42,M,Asian,Bachelors,Married,Yes
+45000,24,M,White,Bachelors,Married,Yes
+40000,44,M,White,Bachelors,Married,Yes
+11000,73,M,White,Bachelors,Married,No
+54000,39,M,Hispanic,Bachelors,Married,Yes
+1.00E+05,44,M,Hispanic,Bachelors,Divorced,Yes
+120000,53,M,White,Bachelors,Married,Yes
+79481,68,M,Black,Bachelors,Divorced,Yes
+90000,39,M,Black,Bachelors,Married,Yes
+95000,43,M,White,Bachelors,Married,Yes
+48000,33,M,White,Bachelors,Married,Yes
+85000,53,M,White,Bachelors,Married,Yes
+60000,61,M,White,Bachelors,Married,Yes
+44000,64,M,White,Bachelors,Married,No
+35000,25,M,White,Bachelors,Never Married,Yes
+20000,68,M,Hispanic,Bachelors,Divorced,Yes
+50000,57,M,White,Bachelors,Married,Yes
+125000,39,M,White,Bachelors,Married,Yes
+130000,52,M,White,Bachelors,Married,Yes
+50000,62,M,Black,Bachelors,Married,Yes
+120000,50,M,Asian,Bachelors,Married,Yes
+65000,28,M,White,Bachelors,Divorced,Yes
+45000,28,M,White,Bachelors,Married,Yes
+1.00E+05,25,M,Asian,Bachelors,Never Married,Yes
+55000,26,M,White,Bachelors,Never Married,Yes
+22000,75,M,Asian,Bachelors,Married,Yes
+92000,28,M,White,Bachelors,Never Married,Yes
+20000,31,M,White,Bachelors,Married,Yes
+85002,40,M,White,Bachelors,Married,Yes
+97000,60,M,White,Bachelors,Married,Yes
+120000,38,M,White,Bachelors,Never Married,No
+40000,24,M,Asian,Bachelors,Never Married,Yes
+37000,30,M,White,Bachelors,Married,Yes
+53000,31,M,White,Bachelors,Married,Yes
+55000,39,M,White,Bachelors,Married,Yes
+80000,36,M,White,Bachelors,Married,Yes
+40000,27,M,White,Bachelors,Never Married,Yes
+66000,70,M,Hispanic,Bachelors,Divorced,Yes
+45000,34,M,White,Bachelors,Married,Yes
+105000,59,M,White,Bachelors,Married,Yes
+34000,25,M,White,Bachelors,Never Married,No
+75000,32,M,White,Bachelors,Married,Yes
+75000,24,M,White,Bachelors,Never Married,Yes
+150000,40,M,Asian,Bachelors,Married,Yes
+50000,31,M,Black,Bachelors,Married,Yes
+70000,62,M,White,Bachelors,Married,Yes
+124000,33,M,White,Bachelors,Married,Yes
+85000,61,M,Asian,Bachelors,Married,Yes
+9850,25,M,White,Bachelors,Never Married,Yes
+60000,35,M,White,Bachelors,Married,Yes
+70000,55,M,Hispanic,Bachelors,Married,Yes
+1.00E+05,55,M,Black,Bachelors,Never Married,Yes
+1.00E+05,52,M,White,Bachelors,Married,Yes
+70000,43,M,White,Bachelors,Married,Yes
+115000,45,M,Asian,Bachelors,Married,Yes
+60000,34,M,Asian,Bachelors,Married,Yes
+53500,49,M,White,Bachelors,Divorced,Yes
+70000,36,M,White,Bachelors,Married,Yes
+60000,27,M,White,Bachelors,Never Married,Yes
+65000,60,M,White,Bachelors,Married,Yes
+105000,37,M,White,Bachelors,Married,Yes
+22000,23,M,Black,Bachelors,Married,Yes
+44000,46,M,Hispanic,Bachelors,Married,Yes
+38000,42,M,White,Bachelors,Married,Yes
+120000,45,M,White,Bachelors,Married,Yes
+125000,60,M,White,Bachelors,Married,Yes
+60000,30,M,White,Bachelors,Never Married,Yes
+50000,57,M,Black,Bachelors,Married,Yes
+70000,47,M,White,Bachelors,Married,Yes
+85000,39,M,White,Bachelors,Married,Yes
+30000,26,M,White,Bachelors,Never Married,No
+41000,52,M,White,Bachelors,Married,Yes
+5000,65,M,White,Bachelors,Married,Yes
+89000,46,M,White,Bachelors,Divorced,Yes
+57479,32,M,White,Bachelors,Never Married,Yes
+130000,54,M,White,Bachelors,Married,Yes
+62000,32,M,White,Bachelors,Married,Yes
+108000,42,M,White,Bachelors,Married,Yes
+76000,29,M,White,Bachelors,Married,Yes
+5000,72,M,White,Bachelors,Married,No
+32200,61,M,White,Bachelors,Never Married,Yes
+53000,47,M,White,Bachelors,Married,Yes
+90000,35,M,Asian,Bachelors,Married,Yes
+5000,25,M,White,Bachelors,Never Married,No
+91829,47,M,Hispanic,Bachelors,Married,Yes
+62000,26,M,White,Bachelors,Never Married,Yes
+5001,22,M,White,Bachelors,Never Married,Yes
+74000,48,M,White,Bachelors,Divorced,Yes
+120000,43,M,White,Bachelors,Married,Yes
+33000,67,M,White,Bachelors,Married,Yes
+24000,34,M,White,Bachelors,Married,Yes
+29000,29,M,Hispanic,Bachelors,Never Married,Yes
+35000,50,M,White,Bachelors,Divorced,Yes
+45000,25,M,White,Bachelors,Never Married,Yes
+70000,39,M,White,Bachelors,Married,Yes
+130000,56,M,White,Bachelors,Divorced,Yes
+105000,55,M,Asian,Bachelors,Married,Yes
+30000,23,M,White,Bachelors,Never Married,Yes
+40000,44,M,Asian,Bachelors,Never Married,Yes
+98000,35,M,Black,Bachelors,Married,Yes
+60000,49,M,White,Bachelors,Married,No
+70000,25,M,White,Bachelors,Never Married,Yes
+110000,46,M,White,Bachelors,Married,Yes
+71001,58,M,Hispanic,Bachelors,Never Married,Yes
+20000,77,M,Asian,Bachelors,Never Married,Yes
+63000,66,M,Hispanic,Bachelors,Married,Yes
+85000,44,M,White,Bachelors,Married,Yes
+70000,53,M,White,Bachelors,Married,Yes
+76670,34,M,Black,Bachelors,Never Married,Yes
+110000,40,M,White,Bachelors,Married,Yes
+12000,24,F,Black,Bachelors,Never Married,Yes
+42400,24,F,Hispanic,Bachelors,Never Married,Yes
+18000,55,F,White,Bachelors,Divorced,Yes
+30000,60,F,White,Bachelors,Married,Yes
+67000,28,F,White,Bachelors,Never Married,Yes
+28000,51,F,White,Bachelors,Married,Yes
+91000,40,F,Hispanic,Bachelors,Married,Yes
+95000,41,F,White,Bachelors,Married,Yes
+90000,43,F,White,Bachelors,Married,Yes
+40000,54,F,White,Bachelors,Married,Yes
+25000,59,F,Hispanic,Bachelors,Married,Yes
+47000,67,F,White,Bachelors,Married,Yes
+12000,49,F,White,Bachelors,Divorced,Yes
+30000,67,F,Asian,Bachelors,Married,Yes
+30000,51,F,Hispanic,Bachelors,Married,Yes
+43000,42,F,Asian,Bachelors,Married,Yes
+23400,56,F,White,Bachelors,Married,Yes
+75000,40,F,Black,Bachelors,Married,Yes
+43000,30,F,White,Bachelors,Never Married,Yes
+20000,33,F,White,Bachelors,Never Married,Yes
+36500,27,F,White,Bachelors,Married,Yes
+98302,47,F,White,Bachelors,Divorced,Yes
+50000,35,F,White,Bachelors,Married,Yes
+98000,48,F,White,Bachelors,Married,Yes
+75000,36,F,White,Bachelors,Married,Yes
+60000,35,F,Hispanic,Bachelors,Married,Yes
+40000,28,F,White,Bachelors,Never Married,Yes
+28000,38,F,White,Bachelors,Married,Yes
+10000,26,F,Asian,Bachelors,Never Married,No
+20000,32,F,White,Bachelors,Married,Yes
+17000,28,F,White,Bachelors,Never Married,Yes
+47000,31,F,Black,Bachelors,Married,Yes
+36000,54,F,Hispanic,Bachelors,Divorced,Yes
+50002,55,F,White,Bachelors,Married,Yes
+62100,45,F,White,Bachelors,Married,Yes
+30000,33,F,White,Bachelors,Married,Yes
+39000,43,F,White,Bachelors,Divorced,Yes
+70000,44,F,Hispanic,Bachelors,Married,Yes
+8900,26,F,Asian,Bachelors,Never Married,Yes
+1.00E+05,39,F,White,Bachelors,Married,Yes
+30000,25,F,Asian,Bachelors,Married,Yes
+83000,42,F,Asian,Bachelors,Married,Yes
+30800,19,F,White,Bachelors,Married,No
+56000,52,F,White,Bachelors,Married,Yes
+37563,43,F,White,Bachelors,Never Married,Yes
+80000,53,F,White,Bachelors,Married,Yes
+55000,56,F,White,Bachelors,Separated,Yes
+32000,46,F,White,Bachelors,Married,Yes
+60002,31,F,White,Bachelors,Never Married,Yes
+48000,40,F,White,Bachelors,Widowed,Yes
+32000,28,F,Black,Bachelors,Never Married,Yes
+143000,47,F,Black,Bachelors,Married,Yes
+80000,51,F,White,Bachelors,Married,Yes
+15000,54,F,Black,Bachelors,Married,Yes
+5500,58,F,White,Bachelors,Married,Yes
+22759,55,F,Other,Bachelors,Married,Yes
+27000,34,F,White,Bachelors,Married,Yes
+36002,55,F,Hispanic,Bachelors,Married,Yes
+9600,41,F,Hispanic,Bachelors,Married,No
+26100,63,F,White,Bachelors,Married,No
+40000,42,F,White,Bachelors,Married,Yes
+45000,44,F,White,Bachelors,Divorced,Yes
+121000,41,F,White,Bachelors,Married,Yes
+38000,35,F,White,Bachelors,Married,Yes
+350,34,F,White,Bachelors,Married,Yes
+32000,53,F,White,Bachelors,Married,Yes
+1820,26,F,White,Bachelors,Never Married,Yes
+2000,53,F,White,Bachelors,Married,No
+44240,32,F,White,Bachelors,Married,Yes
+23400,60,F,Asian,Bachelors,Never Married,Yes
+1100,23,F,White,Bachelors,Never Married,Yes
+12000,35,F,White,Bachelors,Married,Yes
+55000,28,F,White,Bachelors,Married,Yes
+23000,41,F,White,Bachelors,Divorced,Yes
+90000,48,F,White,Bachelors,Never Married,No
+88000,47,F,White,Bachelors,Married,Yes
+1.00E+05,30,F,White,Bachelors,Married,Yes
+29000,44,F,White,Bachelors,Married,Yes
+67000,56,F,Black,Bachelors,Divorced,Yes
+42000,38,F,White,Bachelors,Married,Yes
+29000,28,F,Asian,Bachelors,Married,Yes
+18000,41,F,White,Bachelors,Married,Yes
+125000,34,F,White,Bachelors,Married,Yes
+45000,45,F,White,Bachelors,Married,Yes
+80000,50,F,Black,Bachelors,Married,Yes
+20000,29,F,White,Bachelors,Never Married,Yes
+9100,30,F,Black,Bachelors,Never Married,Yes
+44000,48,F,White,Bachelors,Married,Yes
+44000,37,F,White,Bachelors,Married,Yes
+59000,32,F,White,Bachelors,Married,Yes
+84000,62,F,Black,Bachelors,Never Married,No
+30500,49,F,White,Bachelors,Divorced,Yes
+54000,33,F,White,Bachelors,Married,Yes
+30000,32,F,White,Bachelors,Married,Yes
+52000,32,F,Hispanic,Bachelors,Never Married,Yes
+4000,24,F,White,Bachelors,Never Married,Yes
+10000,38,F,Black,Bachelors,Married,Yes
+54000,63,F,Black,Bachelors,Never Married,Yes
+40000,39,F,Hispanic,Bachelors,Married,Yes
+20000,32,F,White,Bachelors,Married,Yes
+16000,24,F,White,Bachelors,Never Married,Yes
+22000,25,F,White,Bachelors,Never Married,Yes
+45200,25,F,White,Bachelors,Never Married,Yes
+95000,30,F,White,Bachelors,Never Married,Yes
+65000,35,F,Asian,Bachelors,Married,Yes
+50000,28,F,Asian,Bachelors,Never Married,Yes
+5000,67,F,White,Bachelors,Divorced,Yes
+25000,32,F,Hispanic,Bachelors,Never Married,Yes
+44000,35,F,Hispanic,Bachelors,Divorced,Yes
+60000,37,F,Hispanic,Bachelors,Never Married,Yes
+40000,53,F,White,Bachelors,Divorced,Yes
+52000,42,F,Asian,Bachelors,Married,Yes
+54000,49,F,White,Bachelors,Married,Yes
+28002,48,F,Hispanic,Bachelors,Married,Yes
+31000,41,F,White,Bachelors,Never Married,Yes
+1.00E+05,48,F,White,Bachelors,Married,Yes
+2000,32,F,White,Bachelors,Married,Yes
+300,33,F,Other,Bachelors,Never Married,No
+38000,31,F,Asian,Bachelors,Married,Yes
+118000,52,F,White,Bachelors,Married,Yes
+55000,30,F,White,Bachelors,Married,Yes
+35000,34,F,Black,Bachelors,Married,Yes
+18500,32,F,Other,Bachelors,Married,Yes
+40000,67,F,Other,Bachelors,Married,Yes
+80000,48,F,White,Bachelors,Widowed,Yes
+6000,36,F,White,Bachelors,Married,Yes
+33000,54,F,Black,Bachelors,Married,Yes
+78000,44,F,Asian,Bachelors,Married,Yes
+67000,39,F,White,Bachelors,Married,Yes
+22638,33,F,White,Bachelors,Never Married,Yes
+40000,52,F,White,Bachelors,Married,Yes
+35000,29,F,White,Bachelors,Married,Yes
+36000,53,F,Black,Bachelors,Divorced,Yes
+28000,33,F,Hispanic,Bachelors,Married,Yes
+65000,42,F,White,Bachelors,Divorced,Yes
+17000,34,F,Asian,Bachelors,Never Married,Yes
+66500,45,F,White,Bachelors,Married,Yes
+40000,25,F,White,Bachelors,Never Married,Yes
+25000,41,F,White,Bachelors,Married,Yes
+150000,55,F,Hispanic,Bachelors,Married,Yes
+62000,29,F,White,Bachelors,Never Married,Yes
+8000,22,F,Hispanic,Bachelors,Never Married,No
+110000,35,F,Asian,Bachelors,Never Married,Yes
+27000,22,F,Asian,Bachelors,Never Married,Yes
+78000,42,F,White,Bachelors,Married,Yes
+6500,42,F,White,Bachelors,Married,Yes
+101390,46,F,Black,Bachelors,Married,Yes
+45000,48,F,White,Bachelors,Married,Yes
+41768,53,F,White,Bachelors,Married,Yes
+82000,42,F,White,Bachelors,Married,Yes
+15360,46,F,White,Bachelors,Divorced,Yes
+18000,24,F,White,Bachelors,Never Married,Yes
+40000,39,F,White,Bachelors,Married,Yes
+5480,22,F,White,Bachelors,Never Married,Yes
+40000,49,F,White,Bachelors,Married,Yes
+15000,34,F,Asian,Bachelors,Married,Yes
+60000,43,F,Hispanic,Bachelors,Married,Yes
+52000,26,F,White,Bachelors,Never Married,Yes
+102000,41,F,Hispanic,Bachelors,Married,Yes
+58330,33,F,White,Bachelors,Married,Yes
+6000,67,F,Black,Bachelors,Divorced,Yes
+51000,59,F,White,Bachelors,Married,Yes
+38000,48,F,White,Bachelors,Married,Yes
+50000,30,F,White,Bachelors,Never Married,Yes
+41000,54,F,Black,Bachelors,Married,Yes
+44000,49,F,White,Bachelors,Married,Yes
+40000,31,F,White,Bachelors,Married,Yes
+60000,29,F,Asian,Bachelors,Married,Yes
+42000,28,F,White,Bachelors,Married,Yes
+22000,26,F,Asian,Bachelors,Never Married,Yes
+150000,39,F,White,Bachelors,Never Married,Yes
+40000,23,F,White,Bachelors,Never Married,Yes
+90000,43,F,White,Bachelors,Married,Yes
+60000,55,F,Asian,Bachelors,Married,Yes
+13000,25,F,White,Bachelors,Married,Yes
+6000,35,F,Hispanic,Bachelors,Married,Yes
+70000,42,F,White,Bachelors,Married,Yes
+70000,35,F,White,Bachelors,Never Married,Yes
+38000,61,F,Black,Bachelors,Married,Yes
+11000,28,F,Hispanic,Bachelors,Never Married,Yes
+39000,25,F,White,Bachelors,Never Married,Yes
+24000,47,F,White,Bachelors,Married,Yes
+42000,58,F,White,Bachelors,Married,Yes
+150000,39,F,White,Bachelors,Married,Yes
+30000,38,F,White,Bachelors,Married,Yes
+5600,38,F,Hispanic,Bachelors,Married,No
+11300,36,F,White,Bachelors,Married,Yes
+17000,52,F,White,Bachelors,Married,Yes
+102000,51,F,White,Bachelors,Widowed,Yes
+11000,48,F,White,Bachelors,Married,Yes
+36000,66,F,White,Bachelors,Married,No
+40,47,F,White,Bachelors,Married,No
+60000,38,F,Black,Bachelors,Married,Yes
+49900,36,F,White,Bachelors,Married,Yes
+27000,41,F,White,Bachelors,Married,Yes
+10000,46,F,Hispanic,Bachelors,Divorced,No
+22150,26,F,White,Bachelors,Never Married,Yes
+45000,39,F,White,Bachelors,Married,Yes
+33000,23,F,Black,Bachelors,Never Married,Yes
+88000,38,F,White,Bachelors,Married,Yes
+145000,33,F,White,Bachelors,Married,Yes
+64000,62,F,White,Bachelors,Divorced,Yes
+55000,37,F,White,Bachelors,Married,Yes
+42000,29,F,White,Bachelors,Never Married,Yes
+60000,47,F,White,Bachelors,Married,Yes
+88000,53,F,White,Bachelors,Married,Yes
+23000,31,F,Asian,Bachelors,Married,Yes
+16000,37,F,Black,Bachelors,Never Married,Yes
+25000,24,F,White,Bachelors,Never Married,Yes
+45800,50,F,White,Bachelors,Married,Yes
+42200,62,F,White,Bachelors,Married,No
+35000,27,F,White,Bachelors,Married,Yes
+13000,51,F,White,Bachelors,Married,Yes
+50000,63,F,Black,Bachelors,Never Married,Yes
+4000,42,F,White,Bachelors,Married,Yes
+60002,56,F,Hispanic,Bachelors,Married,No
+35000,60,F,White,Bachelors,Married,Yes
+56000,42,F,White,Bachelors,Married,Yes
+45000,30,F,White,Bachelors,Married,Yes
+35000,30,F,White,Bachelors,Married,Yes
+58666,49,F,White,Bachelors,Married,Yes
+56000,23,F,White,Bachelors,Never Married,No
+1700,36,F,White,Bachelors,Married,Yes
+25000,31,F,White,Bachelors,Never Married,Yes
+50000,28,F,White,Bachelors,Married,Yes
+9000,44,F,White,Bachelors,Married,Yes
+18000,61,F,Asian,Bachelors,Married,Yes
+50000,41,F,Hispanic,Bachelors,Married,Yes
+92000,48,F,Hispanic,Bachelors,Divorced,Yes
+76560,60,F,White,Bachelors,Married,Yes
+110000,35,F,White,Bachelors,Never Married,Yes
+1.00E+05,52,F,Black,Bachelors,Married,Yes
+43000,26,F,White,Bachelors,Never Married,Yes
+36000,55,F,White,Bachelors,Married,Yes
+32000,59,F,White,Bachelors,Separated,Yes
+15000,59,F,White,Bachelors,Married,Yes
+15600,57,F,White,Bachelors,Married,Yes
+59000,37,F,White,Bachelors,Married,Yes
+25000,27,F,Hispanic,Bachelors,Never Married,Yes
+50000,32,F,White,Bachelors,Married,Yes
+80000,62,F,Black,Bachelors,Married,Yes
+45000,34,F,White,Bachelors,Married,Yes
+48000,48,F,Hispanic,Bachelors,Married,Yes
+32200,24,F,Hispanic,Bachelors,Never Married,Yes
+55000,32,F,Hispanic,Bachelors,Never Married,Yes
+1500,22,F,White,Bachelors,Never Married,Yes
+29000,49,F,White,Bachelors,Never Married,Yes
+13000,44,F,White,Bachelors,Divorced,Yes
+50000,37,F,White,Bachelors,Separated,Yes
+85000,30,F,White,Bachelors,Married,Yes
+75595,54,F,White,Bachelors,Never Married,Yes
+55000,62,F,White,Bachelors,Widowed,Yes
+25000,40,F,White,Bachelors,Divorced,Yes
+50000,39,F,White,Bachelors,Married,Yes
+18400,28,F,White,Bachelors,Married,No
+30000,52,F,White,Bachelors,Married,Yes
+1.00E+05,23,F,Asian,Bachelors,Never Married,Yes
+1.00E+05,22,F,White,Bachelors,Never Married,Yes
+13500,26,F,White,Bachelors,Never Married,Yes
+55001,50,F,White,Bachelors,Married,Yes
+30000,36,F,White,Bachelors,Married,Yes
+27500,23,F,Asian,Bachelors,Never Married,Yes
+20000,68,F,White,Bachelors,Married,Yes
+47000,40,F,Black,Bachelors,Never Married,Yes
+23000,36,F,Hispanic,Bachelors,Never Married,Yes
+55002,61,F,White,Bachelors,Married,Yes
+13400,66,F,White,Bachelors,Married,Yes
+52000,37,F,Black,Bachelors,Married,Yes
+72500,59,F,White,Bachelors,Married,Yes
+60000,45,F,Asian,Bachelors,Married,Yes
+8302,61,F,White,Bachelors,Married,Yes
+1.00E+05,56,F,White,Bachelors,Married,Yes
+37000,57,F,Hispanic,Bachelors,Divorced,Yes
+28000,27,F,Black,Bachelors,Never Married,Yes
+68000,51,F,White,Bachelors,Married,Yes
+45000,38,F,Hispanic,Bachelors,Married,Yes
+150000,39,F,White,Bachelors,Married,Yes
+40000,61,F,Black,Bachelors,Married,Yes
+41000,30,F,White,Bachelors,Married,Yes
+22000,33,F,Black,Bachelors,Never Married,Yes
+50000,36,F,White,Bachelors,Married,Yes
+45400,48,F,Black,Bachelors,Married,Yes
+4000,69,F,White,Bachelors,Married,No
+23012,27,F,Asian,Bachelors,Never Married,Yes
+70000,44,F,White,Bachelors,Never Married,Yes
+35000,47,F,Hispanic,Bachelors,Divorced,Yes
+145000,37,F,White,Bachelors,Never Married,Yes
+3250,31,F,White,Bachelors,Never Married,Yes
+27000,23,F,White,Bachelors,Married,Yes
+26000,61,F,White,Bachelors,Married,Yes
+32000,28,F,White,Bachelors,Never Married,Yes
+30000,22,F,Asian,Bachelors,Never Married,No
+13800,28,F,Hispanic,Bachelors,Never Married,Yes
+600,52,F,White,Bachelors,Widowed,Yes
+96000,57,F,White,Bachelors,Never Married,Yes
+25000,39,F,White,Bachelors,Married,No
+50000,36,F,White,Bachelors,Married,Yes
+55000,42,F,White,Bachelors,Married,Yes
+73672,57,F,White,Bachelors,Married,Yes
+43000,30,F,Black,Bachelors,Divorced,Yes
+85000,34,F,Hispanic,Bachelors,Married,Yes
+1800,55,F,White,Bachelors,Married,Yes
+8002,51,F,White,Bachelors,Married,Yes
+40000,35,F,White,Bachelors,Married,Yes
+31000,26,F,Hispanic,Bachelors,Never Married,Yes
+38000,54,F,Black,Bachelors,Married,No
+20000,33,F,White,Bachelors,Married,Yes
+30000,54,F,White,Bachelors,Married,Yes
+24000,68,F,White,Bachelors,Married,No
+3000,59,F,Asian,Bachelors,Married,Yes
+115000,42,F,Asian,Bachelors,Never Married,Yes
+33000,26,F,Black,Bachelors,Never Married,Yes
+55900,30,F,White,Bachelors,Separated,Yes
+41002,24,F,White,Bachelors,Never Married,Yes
+53000,29,F,White,Bachelors,Married,Yes
+30000,45,F,Asian,Bachelors,Married,Yes
+87500,61,F,White,Bachelors,Married,Yes
+120000,30,F,White,Bachelors,Married,Yes
+21000,29,F,Black,Bachelors,Never Married,Yes
+54000,29,F,Hispanic,Bachelors,Never Married,Yes
+22000,62,F,White,Bachelors,Divorced,Yes
+30000,25,F,White,Bachelors,Never Married,Yes
+52000,41,F,White,Bachelors,Married,Yes
+68712,45,F,Hispanic,Bachelors,Divorced,Yes
+90000,28,F,White,Bachelors,Married,Yes
+55000,40,F,Asian,Bachelors,Never Married,Yes
+42000,34,F,White,Bachelors,Married,Yes
+43000,41,F,Black,Bachelors,Married,Yes
+15000,30,F,White,Bachelors,Never Married,Yes
+60000,50,F,White,Bachelors,Married,Yes
+72000,23,F,White,Bachelors,Never Married,Yes
+65000,48,F,Asian,Bachelors,Married,Yes
+40000,25,F,White,Bachelors,Never Married,Yes
+55000,34,F,Hispanic,Bachelors,Married,Yes
+57000,62,F,White,Bachelors,Divorced,Yes
+30000,55,F,White,Bachelors,Married,Yes
+25000,30,F,White,Bachelors,Never Married,Yes
+40000,64,F,Black,Bachelors,Separated,Yes
+43000,29,F,Asian,Bachelors,Never Married,Yes
+30000,30,F,Hispanic,Bachelors,Married,Yes
+82000,57,F,White,Bachelors,Married,Yes
+50000,57,F,Hispanic,Bachelors,Married,Yes
+39000,35,F,Hispanic,Bachelors,Never Married,Yes
+47000,60,F,White,Bachelors,Married,Yes
+45000,47,F,White,Bachelors,Married,Yes
+55000,44,F,White,Bachelors,Married,Yes
+40000,37,F,White,Bachelors,Married,Yes
+27000,40,F,Black,Bachelors,Divorced,Yes
+45000,54,F,White,Bachelors,Married,Yes
+8000,76,F,White,Bachelors,Widowed,Yes
+40000,29,F,White,Bachelors,Separated,Yes
+48000,27,F,White,Bachelors,Married,Yes
+47000,55,F,White,Bachelors,Married,Yes
+50000,51,F,Black,Bachelors,Widowed,Yes
+40000,61,F,White,Bachelors,Widowed,Yes
+45000,62,F,White,Bachelors,Married,Yes
+45000,40,F,White,Bachelors,Married,Yes
+35000,43,F,White,Bachelors,Married,Yes
+40000,29,F,Hispanic,Bachelors,Divorced,Yes
+45000,23,F,White,Bachelors,Never Married,Yes
+40000,49,F,White,Bachelors,Married,Yes
+29000,41,F,Black,Bachelors,Married,Yes
+98000,50,F,Black,Bachelors,Never Married,No
+75000,39,F,Asian,Bachelors,Married,Yes
+35000,58,F,White,Bachelors,Married,Yes
+2500,70,F,Black,Bachelors,Married,No
+95000,44,F,White,Bachelors,Married,Yes
+25000,26,F,White,Bachelors,Never Married,Yes
+1000,29,F,White,Bachelors,Married,Yes
+38000,28,F,White,Bachelors,Married,Yes
+36000,29,F,Hispanic,Bachelors,Never Married,Yes
+55000,50,F,White,Bachelors,Married,Yes
+12500,56,F,White,Bachelors,Married,Yes
+55000,54,F,White,Bachelors,Married,Yes
+150000,40,F,White,Bachelors,Divorced,Yes
+62000,26,F,Asian,Bachelors,Married,Yes
+33000,57,F,Hispanic,Bachelors,Married,Yes
+27000,75,F,Asian,Bachelors,Divorced,No
+130000,63,F,White,Bachelors,Married,Yes
+20000,55,F,White,Bachelors,Married,Yes
+45000,55,F,White,Bachelors,Married,Yes
+18246,49,F,White,Bachelors,Married,Yes
+45000,32,F,Black,Bachelors,Divorced,Yes
+50000,29,F,Black,Bachelors,Never Married,Yes
+30000,34,F,Hispanic,Bachelors,Married,Yes
+20000,43,F,White,Bachelors,Married,Yes
+12000,49,F,Black,Bachelors,Divorced,Yes
+88000,31,F,White,Bachelors,Married,Yes
+70000,29,F,White,Bachelors,Married,Yes
+60000,38,F,White,Bachelors,Married,Yes
+40000,28,F,Asian,Bachelors,Never Married,Yes
+70000,42,F,White,Bachelors,Married,Yes
+50181,58,F,White,Bachelors,Married,Yes
+27000,48,F,White,Bachelors,Married,Yes
+25000,32,F,White,Bachelors,Married,Yes
+25000,64,F,White,Bachelors,Married,Yes
+32000,33,F,Black,Bachelors,Never Married,Yes
+25000,28,F,White,Bachelors,Married,Yes
+83000,37,F,White,Bachelors,Married,Yes
+92000,33,F,White,Bachelors,Married,Yes
+50000,23,F,White,Bachelors,Never Married,Yes
+40000,29,F,White,Bachelors,Never Married,Yes
+35000,61,F,White,Bachelors,Married,Yes
+55000,57,F,White,Bachelors,Married,Yes
+25000,27,F,White,Bachelors,Married,Yes
+50000,43,F,White,Bachelors,Never Married,Yes
+27000,44,F,Asian,Bachelors,Married,Yes
+3500,30,F,Asian,Bachelors,Married,No
+13000,50,F,White,Bachelors,Divorced,Yes
+7500,34,F,White,Bachelors,Married,Yes
+130000,41,F,Hispanic,Bachelors,Married,Yes
+70000,38,F,White,Bachelors,Never Married,Yes
+120000,29,F,Asian,Bachelors,Never Married,Yes
+10400,38,F,Hispanic,Bachelors,Never Married,Yes
+29000,29,F,White,Bachelors,Married,Yes
+40000,38,F,White,Bachelors,Married,Yes
+6000,47,F,White,Bachelors,Married,Yes
+27000,23,F,White,Bachelors,Never Married,Yes
+26240,55,F,White,Bachelors,Married,Yes
+70000,58,F,White,Bachelors,Married,Yes
+80000,25,F,White,Bachelors,Never Married,Yes
+60000,53,F,White,Bachelors,Married,Yes
+16900,39,F,White,Bachelors,Married,Yes
+60000,29,F,White,Bachelors,Married,Yes
+54000,25,F,White,Bachelors,Never Married,Yes
+39000,54,F,Black,Bachelors,Divorced,No
+25000,53,F,White,Bachelors,Married,Yes
+6000,29,F,White,Bachelors,Married,Yes
+40000,46,F,White,Bachelors,Never Married,Yes
+1.00E+05,31,F,White,Bachelors,Never Married,Yes
+51000,49,F,White,Bachelors,Married,Yes
+6000,35,F,White,Bachelors,Married,No
+19000,36,F,White,Bachelors,Never Married,Yes
+65000,37,F,White,Bachelors,Married,Yes
+65000,45,F,White,Bachelors,Never Married,Yes
+56000,24,F,Asian,Bachelors,Never Married,Yes
+14000,61,F,White,Bachelors,Married,Yes
+36000,23,F,White,Bachelors,Married,Yes
+28000,26,F,White,Bachelors,Married,Yes
+90000,23,F,White,Bachelors,Never Married,Yes
+10200,47,F,Asian,Bachelors,Married,Yes
+30000,39,F,Black,Bachelors,Married,Yes
+55000,30,F,Black,Bachelors,Never Married,Yes
+60000,57,F,Black,Bachelors,Never Married,Yes
+6000,23,F,White,Bachelors,Never Married,Yes
+1.00E+05,43,F,Black,Bachelors,Married,Yes
+40000,61,F,White,Bachelors,Divorced,Yes
+56000,35,F,White,Bachelors,Married,Yes
+55000,28,F,Black,Bachelors,Never Married,Yes
+28000,46,F,White,Bachelors,Married,Yes
+25000,22,F,White,Bachelors,Never Married,Yes
+43980,28,F,White,Bachelors,Married,Yes
+23000,50,F,White,Bachelors,Married,Yes
+21000,40,F,Hispanic,Bachelors,Married,Yes
+30000,31,F,White,Bachelors,Married,Yes
+36000,49,F,White,Bachelors,Divorced,Yes
+9035,61,F,White,Bachelors,Never Married,Yes
+46200,30,F,Asian,Bachelors,Married,Yes
+27000,57,F,Black,Bachelors,Divorced,Yes
+9000,43,F,White,Bachelors,Married,No
+26000,23,F,White,Bachelors,Never Married,Yes
+525,30,F,White,Bachelors,Married,No
+25000,32,F,Black,Bachelors,Never Married,Yes
+1.00E+05,56,F,Asian,Bachelors,Divorced,Yes
+55000,28,F,White,Bachelors,Never Married,Yes
+125000,29,F,Black,Bachelors,Never Married,Yes
+25000,50,F,White,Bachelors,Married,Yes
+1500,25,F,Hispanic,Bachelors,Never Married,Yes
+48000,27,F,White,Bachelors,Never Married,Yes
+29000,41,F,White,Bachelors,Married,Yes
+1.00E+05,37,F,White,Bachelors,Married,Yes
+15000,64,F,Black,Bachelors,Divorced,No
+41000,51,F,Black,Bachelors,Married,Yes
+90000,42,F,White,Bachelors,Divorced,No
+130000,43,F,White,Bachelors,Married,Yes
+58000,33,F,Hispanic,Bachelors,Married,Yes
+90000,40,F,White,Bachelors,Never Married,Yes
+55000,54,F,White,Bachelors,Separated,Yes
+73000,30,F,White,Bachelors,Married,Yes
+32420,25,F,White,Bachelors,Married,Yes
+30000,32,F,Asian,Bachelors,Married,No
+12000,56,F,White,Bachelors,Married,Yes
+125000,40,F,Hispanic,Bachelors,Married,Yes
+28000,52,F,Black,Bachelors,Never Married,Yes
+140000,54,F,White,Bachelors,Divorced,Yes
+50000,42,F,Hispanic,Bachelors,Married,Yes
+85000,32,F,White,Bachelors,Married,Yes
+96000,58,F,White,Bachelors,Married,Yes
+40000,26,F,White,Bachelors,Never Married,Yes
+17331,24,F,Black,Bachelors,Never Married,Yes
+50000,57,F,Asian,Bachelors,Never Married,Yes
+52000,46,F,White,Bachelors,Married,Yes
+42000,33,F,White,Bachelors,Never Married,Yes
+35000,47,F,Hispanic,Bachelors,Married,Yes
+40000,54,F,White,Bachelors,Married,Yes
+18000,35,F,Hispanic,Bachelors,Never Married,Yes
+40000,40,F,White,Bachelors,Married,Yes
+48000,28,F,White,Bachelors,Never Married,Yes
+72001,30,F,White,Bachelors,Married,Yes
+36000,44,F,White,Bachelors,Married,Yes
+40000,32,F,White,Bachelors,Never Married,Yes
+40000,32,F,Asian,Bachelors,Never Married,Yes
+90000,25,F,White,Bachelors,Never Married,Yes
+27600,61,F,Black,Bachelors,Never Married,Yes
+23000,27,F,Hispanic,Bachelors,Never Married,Yes
+50000,51,F,Black,Bachelors,Never Married,Yes
+60000,61,F,White,Bachelors,Divorced,Yes
+16700,24,F,Hispanic,Bachelors,Married,Yes
+130000,80,F,White,Bachelors,Married,Yes
+50000,38,F,White,Bachelors,Divorced,Yes
+31000,27,F,Black,Bachelors,Married,Yes
+57000,28,F,White,Bachelors,Never Married,Yes
+8000,36,F,Hispanic,Bachelors,Divorced,Yes
+16000,43,F,Hispanic,Bachelors,Married,Yes
+7500,19,F,White,Bachelors,Never Married,Yes
+17000,48,F,White,Bachelors,Married,Yes
+45000,29,F,White,Bachelors,Married,Yes
+50000,37,F,White,Bachelors,Married,Yes
+41000,39,F,Hispanic,Bachelors,Married,Yes
+74000,45,F,Black,Bachelors,Divorced,Yes
+1.00E+05,48,F,Asian,Bachelors,Married,Yes
+70000,24,F,White,Bachelors,Never Married,Yes
+42000,32,F,Black,Bachelors,Never Married,Yes
+35631,57,F,Asian,Bachelors,Married,Yes
+50000,31,F,White,Bachelors,Never Married,Yes
+90000,64,F,White,Bachelors,Married,Yes
+60000,54,F,White,Bachelors,Married,Yes
+3000,40,F,White,Bachelors,Married,Yes
+50000,30,F,Black,Bachelors,Married,Yes
+3000,71,F,White,Bachelors,Widowed,Yes
+44000,24,F,Black,Bachelors,Never Married,Yes
+51000,63,F,White,Bachelors,Widowed,Yes
+105000,34,F,White,Bachelors,Married,Yes
+150000,43,F,White,Bachelors,Married,Yes
+4526,69,F,Hispanic,Bachelors,Married,No
+31000,36,F,White,Bachelors,Married,Yes
+20000,36,F,White,Bachelors,Divorced,Yes
+90000,39,F,White,Bachelors,Married,Yes
+30000,70,F,Black,Bachelors,Divorced,Yes
+47500,39,F,White,Bachelors,Divorced,Yes
+125000,61,F,White,Bachelors,Married,Yes
+30000,53,F,White,Bachelors,Married,Yes
+80000,48,F,Hispanic,Bachelors,Never Married,Yes
+22400,23,F,White,Bachelors,Married,Yes
+42000,57,F,Hispanic,Bachelors,Married,Yes
+65000,53,F,White,Bachelors,Married,Yes
+110000,35,F,White,Bachelors,Married,Yes
+50000,26,F,White,Bachelors,Married,Yes
+83000,51,F,Asian,Bachelors,Married,Yes
+28000,26,F,White,Bachelors,Never Married,Yes
+15000,42,F,White,Bachelors,Married,Yes
+65000,28,F,White,Bachelors,Married,Yes
+82500,37,F,White,Bachelors,Married,Yes
+120000,39,F,White,Bachelors,Married,Yes
+25000,38,F,White,Bachelors,Married,Yes
+42000,34,F,Hispanic,Bachelors,Divorced,Yes
+14474,71,F,Asian,Bachelors,Widowed,Yes
+35000,28,F,White,Bachelors,Never Married,Yes
+31000,55,F,White,Bachelors,Never Married,Yes
+90000,57,F,White,Bachelors,Married,Yes
+9750,24,F,White,Bachelors,Never Married,Yes
+11200,56,F,White,Bachelors,Married,Yes
+105000,44,F,Black,Bachelors,Never Married,Yes
+38000,52,F,White,Bachelors,Married,Yes
+46000,39,F,White,Bachelors,Married,Yes
+22000,47,F,White,Bachelors,Never Married,Yes
+117000,27,F,White,Bachelors,Never Married,Yes
+60000,37,F,Black,Bachelors,Divorced,Yes
+75000,46,F,Asian,Bachelors,Married,Yes
+40000,26,F,White,Bachelors,Married,Yes
+38000,32,F,White,Bachelors,Never Married,Yes
+16000,24,F,White,Bachelors,Never Married,Yes
+36000,37,F,White,Bachelors,Married,Yes
+48000,27,F,White,Bachelors,Never Married,Yes
+41000,56,F,Black,Bachelors,Married,Yes
+77000,46,F,White,Bachelors,Never Married,Yes
+80000,46,F,White,Bachelors,Divorced,Yes
+51000,69,F,Black,Bachelors,Divorced,Yes
+75000,44,F,White,Bachelors,Divorced,Yes
+1000,48,F,White,Bachelors,Married,Yes
+47000,30,F,Black,Bachelors,Never Married,Yes
+112000,41,F,White,Bachelors,Married,Yes
+95000,40,F,White,Bachelors,Married,Yes
+69000,44,F,White,Bachelors,Married,Yes
+150000,67,F,Asian,Bachelors,Married,Yes
+27600,25,F,White,Bachelors,Never Married,Yes
+32000,54,F,Black,Bachelors,Married,Yes
+54000,66,F,Hispanic,Bachelors,Married,Yes
+28000,38,F,White,Bachelors,Married,Yes
+80080,59,F,Asian,Bachelors,Married,Yes
+22000,26,F,White,Bachelors,Married,Yes
+120000,57,F,White,Bachelors,Married,Yes
+54000,35,F,White,Bachelors,Married,Yes
+60000,70,F,White,Bachelors,Never Married,Yes
+48000,74,F,White,Bachelors,Married,No
+55000,34,F,White,Bachelors,Married,No
+50000,33,F,White,Bachelors,Married,Yes
+52000,51,F,White,Bachelors,Married,Yes
+130000,50,F,White,Bachelors,Married,Yes
+600,53,F,White,Bachelors,Married,Yes
+18000,21,F,White,Bachelors,Never Married,Yes
+71000,50,F,White,Bachelors,Married,Yes
+50000,63,F,White,Bachelors,Married,Yes
+7200,26,F,Asian,Bachelors,Married,Yes
+88000,62,F,White,Bachelors,Married,Yes
+44000,36,F,White,Bachelors,Married,Yes
+10000,50,F,Asian,Bachelors,Married,Yes
+1.00E+05,63,F,White,Bachelors,Married,Yes
+137500,58,F,White,Bachelors,Married,Yes
+30000,47,F,White,Bachelors,Married,Yes
+54000,29,F,White,Bachelors,Divorced,Yes
+48000,52,F,White,Bachelors,Divorced,Yes
+3600,33,F,Black,Bachelors,Married,No
+130000,46,F,White,Bachelors,Married,Yes
+60000,35,F,Black,Bachelors,Never Married,Yes
+130000,55,F,White,Bachelors,Married,Yes
+49000,30,F,Black,Bachelors,Divorced,Yes
+43500,41,F,White,Bachelors,Married,Yes
+28000,23,F,Asian,Bachelors,Never Married,Yes
+47407,43,F,Asian,Bachelors,Married,Yes
+25000,35,F,Hispanic,Bachelors,Married,Yes
+50000,24,F,Black,Bachelors,Never Married,Yes
+18000,38,F,White,Bachelors,Married,Yes
+70000,54,F,Black,Bachelors,Separated,Yes
+50000,37,F,Asian,Bachelors,Married,Yes
+59000,39,F,White,Bachelors,Married,Yes
+12000,21,F,White,Bachelors,Never Married,Yes
+50000,31,F,White,Bachelors,Married,Yes
+60000,40,F,Hispanic,Bachelors,Married,No
+52000,69,F,White,Bachelors,Married,Yes
+1560,25,F,Hispanic,Bachelors,Married,Yes
+45000,24,F,White,Bachelors,Never Married,Yes
+28000,20,F,White,Bachelors,Never Married,Yes
+36000,31,F,White,Bachelors,Never Married,Yes
+70000,37,F,White,Bachelors,Married,Yes
+7500,46,F,White,Bachelors,Married,Yes
+55000,39,F,Asian,Bachelors,Married,Yes
+20000,59,F,White,Bachelors,Divorced,Yes
+18000,26,F,Asian,Bachelors,Never Married,No
+19500,34,F,Asian,Bachelors,Separated,Yes
+102000,38,F,Asian,Bachelors,Married,Yes
+60000,28,F,White,Bachelors,Never Married,Yes
+80000,26,F,Asian,Bachelors,Never Married,Yes
+1500,23,F,White,Bachelors,Never Married,No
+125000,53,F,White,Bachelors,Widowed,Yes
+28000,26,F,Hispanic,Bachelors,Never Married,Yes
+60000,34,F,White,Bachelors,Never Married,No
+43000,36,F,White,Bachelors,Married,Yes
+32000,28,F,White,Bachelors,Married,Yes
+4000,52,F,White,Bachelors,Married,Yes
+280,26,F,White,Bachelors,Married,No
+4000,33,F,White,Bachelors,Never Married,No
+25731,36,F,White,Bachelors,Divorced,Yes
+36000,27,F,White,Bachelors,Married,Yes
+80000,47,F,Asian,Bachelors,Married,Yes
+2300,23,F,White,Bachelors,Never Married,No
+35000,38,F,White,Bachelors,Married,Yes
+90000,50,F,White,Bachelors,Married,Yes
+140000,62,F,Asian,Bachelors,Married,Yes
+36000,38,F,Hispanic,Bachelors,Married,Yes
+8000,56,F,Hispanic,Bachelors,Divorced,Yes
+60000,51,F,Asian,Bachelors,Married,Yes
+22000,39,F,White,Bachelors,Married,Yes
+48000,40,F,White,Bachelors,Married,No
+25000,41,F,White,Bachelors,Married,Yes
+36000,31,F,Black,Bachelors,Widowed,Yes
+45000,34,F,White,Bachelors,Married,Yes
+95000,43,F,White,Bachelors,Divorced,Yes
+1700,38,F,Black,Bachelors,Married,Yes
+1.00E+05,52,F,White,Bachelors,Married,Yes
+10000,30,F,Black,Bachelors,Married,Yes
+53000,44,F,White,Bachelors,Married,Yes
+52000,41,F,Black,Bachelors,Divorced,Yes
+8000,34,F,Black,Bachelors,Divorced,Yes
+20000,54,F,Hispanic,Bachelors,Divorced,Yes
+140000,45,F,Black,Bachelors,Married,Yes
+48000,33,F,Hispanic,Bachelors,Never Married,Yes
+72000,38,F,White,Bachelors,Separated,Yes
+125000,47,F,Black,Bachelors,Divorced,Yes
+8500,60,F,White,Bachelors,Divorced,Yes
+40000,44,F,White,Bachelors,Married,Yes
+30000,58,F,Other,Bachelors,Married,Yes
+54000,51,F,White,Bachelors,Married,Yes
+18000,33,F,White,Bachelors,Married,Yes
+42000,33,F,White,Bachelors,Married,Yes
+130000,60,F,White,Bachelors,Married,Yes
+35000,42,F,White,Bachelors,Married,Yes
+37000,45,F,White,Bachelors,Married,Yes
+68000,33,F,White,Bachelors,Married,Yes
+63000,58,F,White,Bachelors,Divorced,Yes
+48000,58,F,White,Bachelors,Married,Yes
+90000,66,F,Asian,Bachelors,Married,Yes
+40000,43,F,White,Bachelors,Married,Yes
+40000,42,F,White,Bachelors,Divorced,Yes
+40000,60,F,Hispanic,Bachelors,Divorced,Yes
+1.00E+05,38,F,White,Bachelors,Married,Yes
+60000,67,F,White,Bachelors,Married,Yes
+78000,28,F,Hispanic,Bachelors,Married,Yes
+80000,55,F,White,Bachelors,Married,Yes
+33000,30,F,White,Bachelors,Married,Yes
