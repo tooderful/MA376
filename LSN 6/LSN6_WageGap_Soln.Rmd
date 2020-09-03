@@ -1,5 +1,5 @@
 ---
-title: "Analyzing the Wage Gap"
+title: "Analyzing the Racial Income Gap"
 author: "by Anny-Claude Joseph"
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 ### Background 
-We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%205/Prep%20Files/CEPR_2018_Data2.R).] For this analysis we will evaluate incomes by race for a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
+We continue to work with the dataset based on a portion of the Current Population Survey Uniform Extracts from the Center for Economic and Policy Research (Center, 2019).^[All variable modifications are documented [here](https://github.com/tooderful/MA376/blob/master/LSN%206/Prep%20Files/CEPR_2018_Data3.R).] For this analysis we will evaluate incomes by race for a random sample of 1,400 *adult earners with Bachelors degrees who made $150,000 or less per year*. 
 
 ```{r, message=FALSE, echo=TRUE}
 library('tidyverse')
@@ -70,7 +70,7 @@ We can use two approaches to determine statistical significance: the 3S strategy
 
 Use the [Comparing Groups applet](http://www.rossmanchance.com/applets/ComparingGroups.html). Make sure the explanatory and response variables are ordered to match the button above the data and press 'Use Data'. Check the box to 'Show Groups'. Check the 'Show Shuffle Options' box and select the 'Plot' radio button. Use at least 1000 shuffles.  
 
-a) We can use $\small R^2$ as the sample statistic. What is the value of $\small R^2$? Explain what the value means. $\small R^2 =$ 0.015. Less than 2% of the variation in income is explained by race.
+a) We can use $\small R^2$ as the sample statistic. What is the value of $\small R^2$? Explain what the value means. $\small R^2 =$ 0.015. `r colorize("*Less than 2% of the variation in income is explained by race.*", "Blue")`
 
 b) What is the standardized statistic?
 `r colorize("*F-statistic = 5.29*", "Blue")`
@@ -83,13 +83,13 @@ c) Is there evidence of a statistically significant difference in mean income be
 
 a. What theory-based approach could we use to determine if there was a statistically significant difference in incomes between the racial groups?
 
-`r colorize("*A theoretical F-distribution could be used to determine if there was a statistically significant difference in incomes between the racial groups.*", "blue")`
+`r colorize("*An ANOVA test with a corresponding theoretical F-distribution could be used to determine if there was a statistically significant difference in incomes between the racial groups.*", "blue")`
 
 
 ```{r, message=FALSE, echo=TRUE, out.width = '60%',fig.align = "center"}
 theory.F <- lm(Income ~ Race, data = wage.dat)
 summary(theory.F)$r.squared
-anova(theory.F)
+anova(theory.F)                  # ANOVA test
 ``` 
 
 b. Are the validity conditions for this theory-based approach satisfied?
@@ -118,7 +118,7 @@ Summarize the conclusions we could draw from this study. How far can we generali
 #### Step 6: Look back and ahead
 Identify limitations to our approach. What could we do to address them in a future study?
 
-`r colorize("*As previously discussed, a major limitation of this study is that it does not allow us to account for other sources of variation. In future work we could create statistical models that allow us to account for these variables.*", "blue")`
+`r colorize("*The ANOVA test and corresponding F-test suggests that at least one of the population means differs from the others more than we would expect by chance alone. However, we need confidence intervals to help us decide which ones differ and by how much they differ.*", "blue")`
 
 
 <br>
